@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.8)  8 NOV 2020 21:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.8)  8 NOV 2020 21:42
 entering extended mode
-**"d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/ADS2/1_VyhledavaniVTextu.tex"
-("d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/ADS2/1_VyhledavaniVTextu.tex"
+**"d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/KaG1/4_LatinskeCtverce.tex"
+("d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/KaG1/4_LatinskeCtverce.tex"
 LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-10-27> xparse <2020-03-03> (C:\Users\Vojta\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -110,30 +110,30 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layoutvoffset=\dimen155
 \Gm@dimlist=\toks22
  (C:\Users\Vojta\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-LaTeX Font Info:    Trying to load font information for T1+aer on input line 9.
+LaTeX Font Info:    Trying to load font information for T1+aer on input line 8.
  (C:\Users\Vojta\AppData\Local\Programs\MiKTeX\tex/latex/ae\t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 ) (C:\Users\Vojta\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count198
 \l__pdf_internal_box=\box49
-) ("d:/Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\ADS2\1_VyhledavaniVTextu.aux")
-\openout1 = `1_VyhledavaniVTextu.aux'.
+) ("d:/Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\KaG1\4_LatinskeCtverce.aux")
+\openout1 = `4_LatinskeCtverce.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -169,26 +169,26 @@ LaTeX Font Info:    ... okay on input line 9.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
 (C:\Users\Vojta\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
  (C:\Users\Vojta\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/Vojta/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] ("d:/Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\ADS2\1_VyhledavaniVTextu.aux") ) 
+{C:/Users/Vojta/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] ("d:/Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\KaG1\4_LatinskeCtverce.aux") ) 
 Here is how much of TeX's memory you used:
  2359 strings out of 479799
- 31633 string characters out of 2869723
- 299550 words of memory out of 3000000
+ 31611 string characters out of 2869723
+ 298555 words of memory out of 3000000
  19348 multiletter control sequences out of 15000+200000
  548163 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,6n,72p,291b,216s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 66i,6n,72p,289b,216s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on "d:/Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\ADS2\1_VyhledavaniVTextu.pdf" (1 page, 35571 bytes).
+Output written on "d:/Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\KaG1\4_LatinskeCtverce.pdf" (1 page, 31278 bytes).
 PDF statistics:
  18 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
