@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.8)  8 NOV 2020 14:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.8)  8 NOV 2020 21:22
 entering extended mode
 **"d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/ADS2/1_VyhledavaniVTextu.tex"
 ("d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/ADS2/1_VyhledavaniVTextu.tex"
@@ -176,26 +176,21 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
  (C:\Users\Vojta\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
-[1
+) [1
 
 {C:/Users/Vojta/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] ("d:/Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\ADS2\1_VyhledavaniVTextu.aux") ) 
 Here is how much of TeX's memory you used:
- 2369 strings out of 479799
- 31739 string characters out of 2869723
+ 2359 strings out of 479799
+ 31633 string characters out of 2869723
  298550 words of memory out of 3000000
- 19356 multiletter control sequences out of 15000+200000
- 549862 words of font info for 69 fonts, out of 3000000 for 9000
+ 19348 multiletter control sequences out of 15000+200000
+ 548163 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,6n,72p,291b,216s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on "d:/Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\ADS2\1_VyhledavaniVTextu.pdf" (1 page, 56233 bytes).
+<C:/Users/Vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on "d:/Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\ADS2\1_VyhledavaniVTextu.pdf" (1 page, 33387 bytes).
 PDF statistics:
- 30 PDF objects out of 1000 (max. 8388607)
+ 18 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
