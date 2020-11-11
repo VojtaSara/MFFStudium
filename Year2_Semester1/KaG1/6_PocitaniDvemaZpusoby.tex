@@ -1,0 +1,61 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ae} 
+\usepackage[margin=1in]{geometry}
+\title{Počítání dvěma způsoby}
+\author{Vojtěch Šára, Marek Douša}
+\begin{document}
+\maketitle
+Abstract: určím nějakou veličinu dvěma způsoby, dám je dohromady a dostanu tak explicitní vzorec pro danou veličinu.\\
+%TODO: doplnit příklad p. d. způsoby u Cayleho formule%
+Počet hran symetrického bipartitního grafu je $(\frac{n}{2})^{2}$\\
+Pozorování: grafy bez $C_{3}$ mohou mít až kvadraticky mnoho hran vzhledem k $|v|$.\\
+\textbf{Věta:}\\
+Pokud graf G na n vrcholech neobsahuje $C_{4}$ jako podgraf, potom má 
+nejvýše $\frac{1}{2}(n^{\frac{3}{2}}+n)$ hran.\\\\
+\textbf{Důkaz:}\\
+Spočítáme dvěma způsoby počet vidliček $P_{3}$. Pokud zafixuji dva vrcholy, tak vidím, že vidliček je maximálně
+tolik kolik je dvojic různých vrcholů - $\# vidliček \leq \binom{n}{2}$.\\ 
+Zároveň můžeme vybírat dvojice sousedních vrcholů každého vrcholu - ty také tvoří vidličky a tímto způsobem
+také sumou přes všechny vrcholy dojdeme k celkovému počtu vidliček.
+$\# vidliček = \sum_{v \in V} \binom{deg(v)}{2}$\\
+Dosazením do rovnosti je $\sum_{v \in V} \binom{deg(v)}{2} \leq \binom{n}{2}$ => $\sum_{v \in V} (def(v)-1)^2 \leq n^2$
+Cauchy Schwartzova nerovnost ($<x|y> \leq ||x||*||y||$). \\
+$x={deg(v1)-1,deg(v2)-1},...,deg(vn)-1$
+$y={1,1,1,...,1}$
+Šikovně zvolím x a y, t.ž. mi vyjde $<x|y> = \sum_{i = n} deg(i)-1 = 2*|E| - n$ \\
+$||x|| = \sqrt{\sum_{i = n} deg(i)-1} \leq \sqrt{n^2} = n$ z rovnice co nám vyšla dříve
+$||y|| = \sqrt{\sum_{i=n} 1^2}=\sqrt{n}$
+vycházi $2*|E| - n \leq n*\sqrt{n}$, tedy že počet hran je maximálně $\frac{1}{2}(n^{3/2} + n)$ \\
+$A,B \subseteq X$ nezávislé ... $A \subsetneq B \wedge B \subsetneq A$\\
+Antiřetězec / nezávislá množina $Y \subseteq P(X): \forall A,B \in Y$ jsou $A,B$ navzájem nezávislé.\\\\
+Spernerova Věta:\\
+Každý množinový systém vybudovaný na n prvcích má nejvýše $\binom{n}{n/2}$ nezávislých podmnožin.\\
+Důkaz:\\
+Označíme M největší antiřetězec v $(S, \subseteq)$ kde $S \subseteq P(X), |x| = n$.
+$m = \{M_{1},M_{2},...,M_{k}\}$. Dvěma způosby spočítejme $\#(M,Ř)$, kde $M \in m$ a $Ř$ je maximální
+řetězec obsahující M.\\
+Pozorování: $\#(M,Ř) \leq \#Ř \leq n!$ protože k jednomu Ř lze doplnit nanejvýš jedno M. Řetězců je maximálně tolik,
+kolik je různých uspořádání. \\
+Druhý způsob: \\
+Pozorování - každou množinu M lze nalézt v nejvýše $|M|!(n-|M|)!$ řetězcích. Nakreslíme-li Ř obsahující M.\\
+$$Ř é \emptyset = M_{0},M_{1},...,M_{i}=M,...,M_{n}=X$$. $\#(M,Ř) = \sum_{M \in m} |M|!(n-|M|)!$\\
+$$\sum_{M \in m} |M|!(n-|M|)! \leq n!$$
+$$\sum_{M \in m} \frac{|M|!(n-|M|)!}{n!} \leq -1$$
+$$1 \geq \sum_{M \in m} \binom{n}{|M|}^{-1} \geq \sum_{M \in m} \binom{n}{\frac{n}{2}}^{-1} = |m| \binom{n}{\frac{n}{2}}^{-1}$$
+Poslední krok: $ \Rightarrow  |m| \leq \binom{n}{\frac{n}{2}}$\\\\
+Věta nám umožnuje testovat částečném uspořádání na celém grafu.
+
+Míra souvislosti grafů\\
+Můžeme převést na jednodušší úlohu podrozdělením grafu na více částí.
+Definice: Řekněme, že $S \subseteq V_{0}$ je vrcholový řez (separátor) pokud G\S je nesouvislý.
+Vrcholová souvislost neprázdného grafu F je $K_{v(G)} = min|S|, kde S je vrcholový řez, G\neq K_{n}$ neboli nejmenší počet vrcholů, který už graf udělá nesouvislý.
+Graf je t-souvislý pokud $K_{v}(G)\geq t$
+Jak se souvislost mění na podgrafech?
+Pokud má stejně vrcholů, tak má podgraf $\leq$ souvislost.
+Pokud má méně, tak o něm nemohu říct nic.
+$K_{v}(G) \leq $min deg(n) 
+Hranová souvislost $\neq$ Vrcholová souvislost.
+$\#$ Hranových řezů $\geq \#$ vrcholových řezů.
+\end{document}
