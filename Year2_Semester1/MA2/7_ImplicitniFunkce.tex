@@ -1,0 +1,108 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ae} 
+\usepackage[margin=1in]{geometry}
+\title{Implicitní funkce}
+\author{Vojtěch Šára, Marek Douša}
+\begin{document}
+\maketitle
+Úloha: řešit systém rovnic
+$$F_{1}(x,y_{1},...,y_{n}) = 0,$$
+$$... ... ...$$
+$$F_{n}(x,y_{1},...,y_{n}) = 0 $$
+pro $y_{i}$ jako korektně definované $f_{i}(x)$\\
+A. Jedna rovnice: $F(x,y) = 0$ V okolí bodu $(x^{0},y_{0})$ (horní index není mocnina, ale index vektoru)
+předpokládáme o F: spojité parciální derivace do řádu $k \geq 1$,\\
+Pak se nějak použije lagrangova věta?????\\
+Z toho nám vyjde spojitost a derivace F. Díky tomu můžu spočítat libovolný řád derivace v
+f, z čehož získám Taylorův polynom - kterým aproximuji funkci, kterou hledám (asi teda hledáme f?).\\
+B. Dvě rovnice: 
+$$F_{1}(x,y_{1},y_{2}) = 0$$
+$$F_{2}(x,y_{1},y_{2}) = 0$$
+Řeším nějak jen jednu a druhou řeším parametrem (?) a spočítám determinant, který z
+nějakého důvodu nesmí být nulový.\\
+Jacobiho determinant 
+$$\frac{D(F)}{D(y)} = \det(\frac{\partial F_{i}}{\partial y_{j}})_{i,j=1,...,m}$$
+Připomeňme si, že determinant má geometrický význam objemu rovnoběžnostěnu. Stejně tak,
+jako funkce jedné proměnné natahuje nebo stlačuje délky malých kousků okolo $x$ v poměru
+absoultní hodnoty derivace v $x$, tak vektorová funkce $f = (f_{1},f_{2},...)$ natahuje nebo stlačuje objemy
+malých kousků oblasti U okolo $x$ v poměru absoultní hodnoty Jakobiánu.\\\\
+Věta: Buďte $F_{i}(x,y_{1},...y_{m}), i = 1,...,m$ funkce n+m proměnných se spojitými
+parciálními derivacemi do řádu $k \geq 1$. Buď:
+$$F(x^{0},y^{0}) = o$$
+a 
+$$\frac{D(F)}{D(y)}(x^{0},y^{0}) \neq 0$$
+(Proč tady je Jakobián je zatím nějak tajemné?) Potom existují $\delta > 0 \Delta > 0$
+takové, že pro každé 
+$$x \in (x_{1}^{0}-\delta, x_{1}^{0} +\delta) \times ... \times (x_{n}^{0}-\delta, x_{n}^{0} +\delta)$$
+existuje právě jedno
+$$x \in (y_{1}^{0}-\delta, y_{1}^{0} +\delta) \times ... \times (y_{n}^{0}-\delta, y_{n}^{0} +\delta)$$
+t.ž.: $$F(x,y) = 0$$.\\\\
+
+\textbf{Vázané extrémy.}\\
+Jestli v daném bodě není derivace nulová, pak v tomto bodě nemůže být extrém. Takto
+můžeme snadno vygenerovat všechny kandidáty na extrémy (kde je derivace nulová).
+Akorát si musíme dát pozor na krajní body!\\
+Ve více proměnných je hledání kandidátů stejně snadné - totální diferenciál musí 
+být nulový. (Musím být ale ve vnitřním bodu definičního oboru - ne na kraji)
+$$\frac{\partial f}{\partial x_{i}}(a) = 0, i=1,...,n$$
+Zde je ale bodů na kraji nekonečně mnoho.\\
+Příklad: $f(x,y) = x+2y$ na kruhu $B = \{(x,y)|x^{2}+x^{2}\leq 1\}$. Kruh B je 
+kompaktní a tedy funkce f nabývá maxima i minima na B. Parciální derivace jsou ale
+kladné, tudíž nám nedávají kandidáty na extrémy. Jak to vyřešíme?\\\\
+
+Zkusíme najít extrémy funkce $f(x_{1},...,x_{n})$ jako podřízené vazbám $g_{i}(x_{1},...,x_{n}),
+i = 1,...,k$ (zde funkce g jsou funkce, které omezují f - v našem příkladu je to kruh
+omezující danou funkci)\\
+Věta: Buďte $f,g_{1},...g_{k}$ reálné funkce def. na $D \subseteq \mathbb{E}_{n}$; 
+nechť mají spojité parciální derivace. Nechť je hodnost matice
+$$M = \begin{pmatrix}
+    \frac{\partial g_{1}}{\partial x_{1}}, & ... & \frac{\partial g_{1}}{\partial x_{n}}\\
+    ... & ... & ...\\
+    \frac{\partial g_{k}}{\partial x_{1}}, & ... & \frac{\partial g_{k}}{\partial x_{n}}
+\end{pmatrix}$$
+maximální, tedy $k$ v každém bodě oboru D. Jestliže f nabývá v bodě $a = (a_{1},...,a_{n})$
+lokálního extrému podmíněného vazbami g. 
+Pak existují čísla $\lambda_{1}, ..., \lambda_{k}$ taková, že pro každé $i=1,...,n$ platí:
+$$\frac{\partial f(a)}{\partial x_{i}} + \sum_{j=1}^{k}\lambda_{j} \cdot \frac{\partial g_{j}(a)}{\partial x_{i}} = 0$$\\
+Aplikujeme formuli na předchozí příklad:
+$\frac{\partial f}{\partial x} = 1$ a $\frac{\partial f}{\partial y} = 2$, $g(x,y) = x^{2}+y^{2}-1$
+takže $\frac{\partial g}{\partial x} = 2x$ a $\frac{\partial g}{\partial y} = 2y$ 
+Máme tedy jedno $\lambda$ které splňuje dvě rovnice
+$$ 1 + \lambda \cdot 2x = 0 \quad 2 + \lambda \cdot 2y = 0$$
+To je možné jen když $y = 2x$. Tedy, jelikož $x^{2} + y^{2} = 1$ dostáváme $5x^{2} = 1$
+a tedy $x = +-\frac{1}{\sqrt{5}}$; to lokalizuje extrémy do $(\frac{1}{\sqrt{5}}, \frac{2}{\sqrt{5}})$
+a $(\frac{-1}{\sqrt{5}},\frac{-2}{\sqrt{5}})$\\
+Předpokládáme existenci čísel $\lambda_{1}, ..., \lambda_{k}$ splňujích víc než k rovnic,
+těmto lambdám se říká Lagrangeovy multiplikátory.\\\\
+
+\textbf{Důkaz:}\\
+Matice M má hodnost k právě když aspoň jedna její $k\times k$ podmatice je regulární
+(a tedy má nenulový determinant). Dejme tomu:
+$$
+\begin{vmatrix}
+    \frac{\partial g_{1}}{\partial x_{1}}, & ... & \frac{\partial g_{1}}{\partial x_{k}}\\
+    ... & ... & ...\\
+    \frac{\partial g_{k}}{\partial x_{1}}, & ... & \frac{\partial g_{k}}{\partial x_{k}}
+\end{vmatrix} \neq 0
+$$
+Potom podle věty o implicitních funkcích máme v okolí bodu a funkce $\phi_{i}(x_{k+1},...,x_{n})$
+se spojitými parciálními derivacemi takové, že (pišme $\tilde{x} = (x_{k+1},...,x_{n})$)
+$$g_{i}(\phi_{1}(\tilde{x}), ..., \phi_{k}(\tilde{x}), \tilde{x}) = 0$$ pro $i = 1,...,k$
+Pak přeskočím počítání z lineární algebry a dostanu to co jsem chtěl dokázat (wow) 
+(jakože tu formuli na konci).\\\\
+
+\textbf{Další využití Věty o implicitních funkcích: Regulární zobrazení}\\
+Buď $U \subseteq \mathbb{E}_{n}$ otevřená a nechť mají
+$$ f_{i}, i = 1, ..., n$$
+spojité parciální derivace. Řekneme, že výsledné zobrazení
+$$ f = (f_{1},...,f_{n}) : U \rightarrow \mathbb{E}_{n}$$
+je regulární, jestliže je
+$$\frac{D(f)}{D(x)}(x) \neq 0$$
+pro $\forall x \in U$\\\\
+Je-li $f: U \rightarrow \mathbb{E}_{n}$ regulární, je obraz $f[V]$ každé otevřené podmnožiny
+$V \subseteq U$ otevřený.\\\\
+Regulární zobrazení je lokálně prosté.\\\\
+Prosté regulární zobrazení má regulární inverzi.
+\end{document}
