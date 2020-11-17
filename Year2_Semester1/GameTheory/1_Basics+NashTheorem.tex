@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ae} 
+\usepackage{xltxtra}
+\usepackage[margin=1in]{geometry}
+\title{Nash theorem, Nash equilibria}
+\author{Vojtěch Šára, Marek Douša}
+\begin{document}
+\maketitle
+\section{Basics; notation, definitions}
+Normal form game of $n \in \mathbb{N}$ players is $G = (P,A,w)$, where P is a finite set n players.
+$$A = A_{1}\times \dots \times A_{n}$$
+
+Is a set of action profiles. Action profile is $(a_{1},a_{2},...a_{n})$ where $a_{i} \in A_{i} = $set of actions of player i.\\\\
+
+$u = (u_{1},...,u_{n})$ where $u_{i} : A \rightarrow \mathbb{R}$ is the utility function of i - how good this action is for player i.\\\\
+
+Every player i selects an action $a_{i} \in A_{i}$ - all players select at once. Every player wants to maximize $u_{i}$\\\\
+
+\textbf{EXAMPLE}:\\
+Rock paper scissors:
+$$P = \{1,2\}, A_{1} = \{ROCK, PAPER, SCISSORS\} = A_{2}, A = A_{1} \times A_{2}$$
+$$
+M = (M_{a})_{a} \in A, M_{a} = (u_{1}(a),u_{2}(a)) : \begin{pmatrix}
+    1/2 & R & P & S\\
+    R & 0,0 & -1,1 & 1,-1\\
+    P & 1,-1 & 0,0 & 1,-1\\
+    S & -1,1 & 1,-1 & 0,0 
+\end{pmatrix}
+$$
+A \textbf{strategy} is a prescription how to select an action. There are two types:
+\begin{enumerate}
+    \item Pure strategy - Always select the same action
+    \item 
+\end{enumerate}
+\end{document}
