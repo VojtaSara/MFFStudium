@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.11) (preloaded format=xelatex 2020.11.15)  17 NOV 2020 08:58
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.11) (preloaded format=xelatex 2020.11.15)  18 NOV 2020 10:29
 entering extended mode
-**"d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/7_ImplicitniFunkce.tex"
-("d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/7_ImplicitniFunkce.tex"
+**"d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/8_Objemy.tex"
+("d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/8_Objemy.tex"
 LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-10-27> xparse <2020-03-03> (C:\Users\monib\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -179,8 +179,8 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen160
 \Gm@layoutvoffset=\dimen161
 \Gm@dimlist=\toks24
- (C:\Users\monib\AppData\Local\Programs\MiKTeX\tex/xelatex/xetexconfig\geometry.cfg)) ("d:/Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\7_ImplicitniFunkce.aux")
-\openout1 = `7_ImplicitniFunkce.aux'.
+ (C:\Users\monib\AppData\Local\Programs\MiKTeX\tex/xelatex/xetexconfig\geometry.cfg)) ("d:/Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\8_Objemy.aux")
+\openout1 = `8_Objemy.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
@@ -300,75 +300,111 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
  (C:\Users\monib\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 27--34
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+ []
+
+Missing character: There is no í in font cmmi10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--27
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
+Underfull \hbox (badness 10000) in paragraph at lines 24--27
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
  []
 
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 50--55
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--55
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--80
+Underfull \hbox (badness 10000) in paragraph at lines 50--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--80
+Underfull \hbox (badness 10000) in paragraph at lines 50--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--58
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--58
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 103--109
+Underfull \hbox (badness 10000) in paragraph at lines 77--80
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--109
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--109
-
- []
-
-[3] ("d:/Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\7_ImplicitniFunkce.aux") ) 
+[3] ("d:/Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\8_Objemy.aux") ) 
 Here is how much of TeX's memory you used:
- 5006 strings out of 412197
- 120306 string characters out of 2849632
- 463642 words of memory out of 3000000
- 24471 multiletter control sequences out of 15000+200000
- 544486 words of font info for 64 fonts, out of 3000000 for 9000
+ 5009 strings out of 412197
+ 120278 string characters out of 2849632
+ 454611 words of memory out of 3000000
+ 24472 multiletter control sequences out of 15000+200000
+ 544494 words of font info for 65 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 94i,8n,99p,361b,213s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 94i,6n,99p,351b,213s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on d:/Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\7_ImplicitniFunkce.xdv (3 pages, 37716 bytes).
+Output written on d:/Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\8_Objemy.xdv (3 pages, 24460 bytes).

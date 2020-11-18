@@ -1,7 +1,7 @@
 PWD d:\Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2
 INPUT C:\Users\monib\AppData\Local\MiKTeX\miktex\data\le\xetex\xelatex.fmt
-INPUT d:\Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\7_ImplicitniFunkce.tex
-OUTPUT d:\Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\7_ImplicitniFunkce.log
+INPUT d:\Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\8_Objemy.tex
+OUTPUT d:\Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\8_Objemy.log
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -311,10 +311,10 @@ INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\tex\xelatex\xetexconfig\geome
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\tex\xelatex\xetexconfig\geometry.cfg
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\tex\xelatex\xetexconfig\geometry.cfg
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\tex\xelatex\xetexconfig\geometry.cfg
-INPUT d:\Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\7_ImplicitniFunkce.aux
-INPUT d:\Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\7_ImplicitniFunkce.aux
-INPUT d:\Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\7_ImplicitniFunkce.aux
-OUTPUT d:\Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\7_ImplicitniFunkce.aux
+INPUT d:\Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\8_Objemy.aux
+INPUT d:\Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\8_Objemy.aux
+INPUT d:\Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\8_Objemy.aux
+OUTPUT d:\Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\8_Objemy.aux
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmr.fd
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmr.fd
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmr.fd
@@ -353,5 +353,5 @@ INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-OUTPUT d:\Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\7_ImplicitniFunkce.xdv
-INPUT d:\Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\7_ImplicitniFunkce.aux
+OUTPUT d:\Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\8_Objemy.xdv
+INPUT d:\Škola - MATFYZ\Zapisky\MFFStudium\Year2_Semester1\MA2\8_Objemy.aux

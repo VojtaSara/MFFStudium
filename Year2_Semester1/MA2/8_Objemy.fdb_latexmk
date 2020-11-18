@@ -1,11 +1,11 @@
 # Fdb version 3
-["xdvipdfmx"] 1605599916 "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/7_ImplicitniFunkce.xdv" "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/7_ImplicitniFunkce.pdf" "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/7_ImplicitniFunkce" 1605599917
-  "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/7_ImplicitniFunkce.xdv" 1605599916 37716 864a3257fec079aaa2b0ede48c08073b "xelatex"
+["xdvipdfmx"] 1605691800 "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/8_Objemy.xdv" "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/8_Objemy.pdf" "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/8_Objemy" 1605691801
+  "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/8_Objemy.xdv" 1605691800 24460 347f5cfb3801b037b5c54475b3eec6e5 "xelatex"
   (generated)
-  "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/7_ImplicitniFunkce.pdf"
-["xelatex"] 1605599915 "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/7_ImplicitniFunkce.tex" "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/7_ImplicitniFunkce.xdv" "7_ImplicitniFunkce" 1605599917
-  "7_ImplicitniFunkce.aux" 1605599916 32 ab05033ccbb38b00a31b200ccedf8001 "xelatex"
-  "7_ImplicitniFunkce.tex" 1605599913 6237 5a1dfa6ba782df41728614e4b1708f69 ""
+  "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/8_Objemy.pdf"
+["xelatex"] 1605691799 "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/8_Objemy.tex" "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/8_Objemy.xdv" "8_Objemy" 1605691801
+  "8_Objemy.aux" 1605691800 296 1e14368c573a68ca0df7b59329729d68 "xelatex"
+  "8_Objemy.tex" 1605691797 4511 c661e9ddfb65ff9bd473225554f9614f ""
   "C:/Users/monib/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1605471160 23608562 440ea199c1304e1c8ccd6edbca4b4d41 ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -64,11 +64,11 @@
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/realscripts/realscripts.sty" 1455368082 4558 41199fa3acb4eb54622019e50ccfb65d ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/xltxtra/xltxtra.sty" 1546510394 5871 8a29af4ad9d707b5280738995d050842 ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/xelatex/xetexconfig/geometry.cfg" 1169251881 322 f4a6234bc28bf70659404393c15d3854 ""
-  "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/7_ImplicitniFunkce.aux" 1605599916 32 ab05033ccbb38b00a31b200ccedf8001 ""
-  "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/7_ImplicitniFunkce.tex" 1605599913 6237 5a1dfa6ba782df41728614e4b1708f69 ""
+  "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/8_Objemy.aux" 1605691800 296 1e14368c573a68ca0df7b59329729d68 ""
+  "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/8_Objemy.tex" 1605691797 4511 c661e9ddfb65ff9bd473225554f9614f ""
   (generated)
-  "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/7_ImplicitniFunkce.xdv"
-  "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/7_ImplicitniFunkce.log"
-  "7_ImplicitniFunkce.aux"
-  "7_ImplicitniFunkce.xdv"
-  "7_ImplicitniFunkce.log"
+  "8_Objemy.log"
+  "8_Objemy.aux"
+  "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/8_Objemy.xdv"
+  "d:/Škola - MATFYZ/Zapisky/MFFStudium/Year2_Semester1/MA2/8_Objemy.log"
+  "8_Objemy.xdv"

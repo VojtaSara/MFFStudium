@@ -1,0 +1,85 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ae} 
+\usepackage{xltxtra}
+\usepackage[margin=1in]{geometry}
+\title{Objemy}
+\author{Vojtěch Šára, Marek Douša}
+\begin{document}
+\maketitle
+Nejprve si představme nějaké hezké podmnožiny eukleidovského prostoru. Co znamená objem - jaké by měl mít vlastnotsti?\\
+\begin{enumerate}
+    \item$A\subseteq B \Rightarrow vol(A) \leq vol(B)$
+    \item$A,B disjunktní \Rightarrow vol(A \cup B) = vol(A) + vol(B)$
+    \item vol je zachován isometrií
+    \item V $\mathbb{E}_{2}: vol(\prod_{i}\langle a_{i},b_{i}\rangle) = $obsah obdélníku.
+\end{enumerate}
+Intuitivní pozorování: obsah přímky je nulový (mohu ho obalit jakkoli malým obdélníkem). Obecně objem objektu, který je méně dimenzionální než zkoumaný prostor, je nulový. 
+
+\subsection{Stejnoměrná spojitost}
+(silnější spojitost): $f:(X,d) \rightarrow (Y,d')$ je stejnoměrně spojité, je-li
+$$\forall \epsilon \exists \delta \quad \forall x \forall y :d(x,y) < \delta \Rightarrow d'(f(x),f(y)) < \epsilon$$
+Srovnejme s normální spojitostí:
+$$\forall x \forall \epsilon \exists \delta \quad \forall y :d(x,y) < \delta \Rightarrow d'(f(x),f(y)) < \epsilon$$
+Rozdíl je zásadní! Například:\\
+$f = (x \rightarrow x^{2}): \mathbb{R} \rightarrow  \mathbb{R}$ je spojitá, ale ne stejnoměrně spojitá.\\\\
+
+Je-li $(X,d)$ kompaktní, je každé spojité zobrazení stejnoměrně spojité. Zejména to platí pro spojité funkce na kompaktních intervalech. Důkaz je jednoduchý, sporem.\\\\
+
+\subsection{Riemannův integrál v jedné proměnné - rekapitulace}
+Rozdělení intervalu je posloupnost
+$$P : a = t_{0} < t_{1} < ... < t_{n-1} < t_{n} < b$$
+Rozdělení můžeme zjemnit. Zjemnění:
+$$P' : a = t'_{0} < t'_{1} < ... < t'_{n-1} < t'_{n} < ... < t'_{m} < b$$
+Máme horní a dolní součty obdélníčkových odhadů funkce. Rozdíl těchto dvou součtů při zjemňování klesá.\\\\
+$$s(f,P) = $$ %TODO: dopsat vzorečky%
+
+
+Pokud P' zjemňuje P máme (s je dolní součet, S je horní součet):
+$$s(f,P) \leq s(f,P') \text{a} S(f,P) \geq S(f,P')$$
+Pro každá dvě $P_{1},P_{2}$ je 
+$$s(f,P_{1}) \leq S(f,P'_{2})$$
+Pak:
+$$\underline{\int_{a}^{b}}f(x)dx = \sup\{s(f,P) | P \text{rozdělení}\}$$ a
+$$\bar{\int_{a}^{b}}f(x)dx = \inf\{S(f,P) | P \text{rozdělení}\}$$
+
+Je-li $\underline{\int} = \bar{\int}$ pak společnou hodnotu označujeme jako $\int$\\\\
+
+Riemannův integrál existuje právě když $\forall \epsilon > 0$ existuje rozdělení P takové, že:
+$$S(f,P) - s(f,P) < \epsilon$$
+Důkaz:\\
+Nechť $\int_{a}^{b}f(x)dx$ existuje a nechť $\epsilon > 0$. Potom existují rozdělení $P_{1}$ a $P_{2}$ taková, která jsou si bližší než epsilon. (trochu wonky no)\\\\
+
+Pro každou spojitou $f:\langle a , b \rangle \rightarrow \mathbb{R}$ Riemannův integrál $\int_{a}^{b}f$ existuje.\\\\
+
+Důkaz:\\
+Nestihnul jsem\\\\ %TODO%
+
+Věta: (Integrální o střední hodnotě)\\
+Buď $f:\langle a , b \rangle \rightarrow \mathbb{R}$ spojitá, potom existuje $c \in \langle a,b \rangle$:
+$$\int_{a}^{b}f(x)dx = f(c)(b-a)$$
+Důkaz:\\
+Položme $m = \min\{f(x) | a \leq x \leq b\}$ a $M = \max\{f(x) | a \leq x \leq b\}$. Pak:
+$$ m(b-a) \leq  \int_{a}^{b}f(x)dx \leq M(b-a)$$
+Existuje tedy K takové, že $m\leq K \leq M$ a $\int_{a}^{b}f(x)f(x)dx = K(b-a)$ Jelikože je $f$ spojitá, existuje takové $c \in \langle a,b \rangle$.\\\\
+
+Pozorování: Pro $a<b<c$ je:
+$$\int_{a}^{b}f + \int_{b}^{c}f = \int_{a}^{c}f$$
+
+\textbf{Základní věta analýzy:}\\
+Buď $f:\langle a , b \rangle \rightarrow \mathbb{R}$ spojitá. Pro $x \in \langle a , b \rangle$ definujeme
+$$F(x) = \int_{a}^{x}f(t)dt$$
+Potom je $F'(x) = f(x)$.\\
+
+Důkaz:\\
+Pro $h \neq 0$ máme:
+$$\frac{1}{h}(F(x+h) - f(x)) = \frac{1}{h}(\int_{a}^{x+h} - \int_{a}^{x}f) = \frac{1}{h}\int_{x}^{x+h}f = \frac{1}{h}f(x+\theta h)h = f(x+ \theta h)$$
+kde $0 < \theta < 1$ a jelikož je $f$ i spojitá, je $\lim_{h\rightarrow 0}\frac{1}{h}(F(x+h)-f(x)) = \lim_{h \rightarrow 0}f(x+\theta h) = f(x)$.\\
+\textbf{Tohle je naprosto zásadně ta nejdůležitější věta analýzy ever (tak to řekl Pultr)}\\
+
+Důsledek:\\
+Buď $f:\langle a , b \rangle \rightarrow \mathbb{R}$ spojitá. Potom má primitivní funkci na $(a,b)$ spojitou na $\langle a, b \rangle$. Je-li G primitivní funkce $f$ na $(a,b)$
+spojitá na $\langle a,b \rangle$ potom je
+$$\int_{a}^{b}f(t)dt = G(b)-G(a)$$
+\end{document}
