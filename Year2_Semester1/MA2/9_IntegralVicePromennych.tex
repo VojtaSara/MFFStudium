@@ -1,0 +1,81 @@
+
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ae} 
+\usepackage{xltxtra}
+\usepackage[margin=1in]{geometry}
+\title{Integrál více proměnných}
+\author{Vojtěch Šára, Marek Douša}
+\begin{document}
+\maketitle
+....
+Podobně jako jedné proměnné, děláme horní a dolní součty, pokud se rovnají, tak existuje Riemannův integrál na daném intervalu.\\
+\textbf{Tvrzení} Riemannův integrál $\int_{J}f(x)dx$ existuje právě když pro $\forall \epsilon > 0$ existuje rozdělení P takové, že $S_{J}(f,P) - s_{J}(f,P) < \epsilon$.\\\\
+
+Každá spojitá funkce $f J \rightarrow \mathbb{R}$ na n-rozměrném kompaktním intervalu má Riemannův integrál.\\\\
+
+Důkaz:\\
+V $\mathbb{E}_{n}$ budeme užívat vzdálenost $\sigma$ definovanou jako $\sigma (x,y) = \max_{i} |x_{i} - y_{i}|$. Jelikož je $f$ stejnoměrně spojitá, můžeme pro $\epsilon > 0$ 
+zvolit $\delta > 0$ takové, že:
+$$\sigma (x,y) < \delta \Rightarrow |f(x)|$$
+
+
+
+... Zde chybí zápisek z hodiny ~25. listopadu\\\\
+
+
+Primitivní rozšíření na vyšší dimenzi - povolíme si pouze rovnoběžnostěn jako Df, pak můžeme rozdělit tvar ve všech dimenzích rozdělením $\rightarrow$ z toho máme cihličky
+ve více dimenzích, které můžeme opět sčítat jako 2dimenzionální cihličky = obdélníčky. Takto získáme většinu vlastností integrálu, které už známe. Co ovšem nemáme je
+protějšek základní věty Analýzy. To v následujícím textu zkusíme napravit.\\\\
+
+Fubiniova věta\\
+\textit{Pozor, x a y jsou zde vektory!}\\
+Vezměme součin $J = J' \times J'' \subseteq \mathbb{E}_{m+n}$ intervalů $J' \subseteq \mathbb{E}_{m}$, $J'' \subseteq \mathbb{E}_{n}$. Nechť $\int_{J}f(x,y)dxy$ existuje a
+nechť pro $\forall x \in J'$ (resp. $\forall y \in J''$) existuje $\int_{J''}f(x,y)dy$ (resp. $\int_{J'}f(x,y)dx$). Potom je
+$$\int_{J}f(x,y)dxy = \int_{J'}(\int_{J''}f(x,y)dy)dx = \int_{J''}(\int_{J'}f(x,y)dx)dy $$\\
+
+Ve třech dimenzích pro příklad tedy máme:
+$$\int_{a_{1}}^{b_{1}}( \int_{a_{2}}^{b_{2}}( \int_{a_{3}}^{b_{3}}( f(x_{1},x_{2},x_{3}))dx_{3} )dx_{2} )dx_{1}$$\\
+
+Pro nahlédnutí proč Fubini funguje:
+$$\sum_{i\leq m, j \leq n}x_{ij} = \sum_{i\leq m}(\sum_{j\leq n} x_{ij})$$
+
+Samotný důkaz:\\
+Položme $F(x) = \int_{J''}f(x,y)dy$. Dokážeme, že $\int_{J'}F$ existuje a že $\int_{J}f = \int_{J'}F$. Zvolme rozdělení P intervalu J tak aby
+$$\int f - \epsilon \leq s(f,P) \leq S(f,P) \leq \int f + \epsilon$$
+Toto P je tvořeno rozděleními P' intervalu J' a P'' intervalu J''. Máme 
+$$\mathcal{B}(P) = \{ B' \times B'' | B' \in \mathcal{B}(P'), B'' \in \mathcal{B}(P'')\}$$
+Každá cihla P se objeví jako právě jedno $B' \times B''$. Potom je
+
+$$F(x) \leq \sum_{B'' \in \mathcal{B}(P'') \max_{y \in B''} f(x,y) \times \text{vol}(B'')}$$
+a tedy
+$$S(F,P') \leq \sum_{B' \in \mathcal{P'}} \max_{x \in B'}(\sum_{B'' \in \mathcal{B}(P'')}\max_{y \in B''}f(x,y) \cdot \text{vol}(B'')) \cdot \text{vol}(B') \Rightarrow \dots$$
+To už se nějak dopočítá s nehlédnutím o sumách, které je těsně před důkazem.\\\\
+
+Příklad: Objem koule.\\
+Interval $J = \langle -r, r \rangle \times \langle -r, r \rangle $ vezměme:
+$$f(x,y) = \begin{cases}
+    \sqrt{r^{2} - x^{2} - y^{2}} \text{ pro }  r^{2}-x^{2}-y^{2} \geq 0
+    0 \text{jinak}
+\end{cases}$$
+Podle Fubiniovy věty
+$$2 \int_{-r}^{r}(\int_{-r}^{r}f(x,y)dy)dx = 2 \int_{-r}^{r}(\int_{-u}^{u}f(x,y)dy)dx$$ kde $u = \sqrt{r^{2} - x^{2}}$. Pak už jen spočítáme...\\\\
+
+
+Co uděláme, pokud máme divoký definiční obor? Uvědomme si, že při užití Fubiniovy věty dostaneme více integrálů jedné proměnné, které už mají konečně mnoho bodů nespojitosti a to nám nevadí.
+Takováto argumentace ale není dostatečná - netuším proč, ale intuice docela sedí.\\\\
+
+První poznámka o Lebesgueově integrálu.\\
+Riemannův integrál se dá rozšířit tak, že např. můžeme korektně počítat
+$$\int  \lim f_{n} = \lim \int f_{n}$$
+předpokládajíce jen, že $|f_{n}| \leq K$.\\
+To je přesně Lebesgeův integrál - rozšíření Riemannova integrálu, které funguje lépe v některých speciálních případech.\\\\
+
+Tietzova věta:\\
+Mějme reálnou spojitou omezenou funkci na uzavřené množině. Pak tato funkce lze rozšířit na celý prostor\dots \\\\
+
+S těmito dvěma věcmi bez důkazu vyřešíme náš problém s ošklivými definičními obory. Tady už jsem moc nevěděl, ale v příští přednášce by se toto mělo zlepšit - téma bude Lebesgeův integrál.
+(TOTO NEBUDE U ZKOUŠKY ANYWAYS)
+
+\end{document}
