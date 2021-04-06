@@ -1,0 +1,14 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ae} 
+\usepackage[margin=1in]{geometry}
+\title{Druhý domácí úkol z Pravděpodobnosti a statistiky}
+\author{Vojtěch Šára}
+\begin{document}
+\maketitle
+Použiji Bayesovu větu ke spočítání P(Vybral jsem cinknutou minci | padl šestrkát orel).
+$$P(A|B) = \frac{P(B|A)P(A)}{P(B|A)P(A)+P(B|A^{c})P(A^{c})}$$
+$$P(A|B) = \frac{1\cdot \frac{1}{100}}{1\cdot \frac{1}{100}+\frac{1}{2}^{6}\frac{99}{100}} = 0.39$$
+Pravděpodobnost, že jsme si vytáhli dvouorlovou minci je tedy 0.39.
+\end{document}

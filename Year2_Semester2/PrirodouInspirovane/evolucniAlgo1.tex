@@ -1,0 +1,205 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ae} 
+\usepackage[margin=1in]{geometry}
+\title{Přírodou inspirované algoritmy 1}
+\author{Vojtěch Šára}
+\begin{document}
+\maketitle
+Evoluční algoritmy - podle Darwina\\
+jednoduchý příklad:\\
+binární čísla odpovídající číslům z množiny, které vybírám k součtu\\
+snažím se trefit součtem do nějakého čísla.\\
+Genetické algoritmy - typ evolučních - slouží k symbolické regresi\\\\
+
+AI - výpočetní (evoluční algo, neuronové sítě, Fuzzy logika) / symbolická (reprezentace logikou, plánování, prohledávání)\\\\
+
+\subsection{Machine learning}
+\begin{enumerate}
+    \item s učitelem (klasifikace / regrese) - mám vstupní data spojená s výstupními, chci najít funkci, která to bude splňovat
+    \item bez učitele (shlukování / klustrování) - mám jen vstupní data, snažím se v nich najít nějaké zákonitosti 
+    \item zpětnovazební učení (agent v prostředí) - má akce, stav, cíl, z toho se chci naučit nějakou strategii chování
+\end{enumerate}
+
+\subsection{Neuronové sítě}
+Dopředu spojené neuronové sítě - pokud mohou být i dozadu, tak jde o rekurentní sítě.\\
+Konvoluční sítě \\\\
+
+\subsection{NEAT, hyperNEAT - neuroevoluce}
+Evoluční algoritmus nad neuronovou sítí. Možnost dělat jen váhy, nebo jen topologii, nebo váhy + topologii
+Neuro Evolution Augmenting Topology - NEAT. 
+
+\subsection{Rojové algoritmy} 
+Mravenci, ptáci - lze pomocí toho například řešit nejkratší cestu\\\\
+
+\subsection{Artificial Life}
+Celulární automaty, Tierra, Creatures
+
+
+
+
+
+
+\section{Pravděpodobnost a statistika}
+Množina elementárních jevů - $\Omega$
+Prostor jevů - $\mathcal{F} \subseteq \mathcal{P}(\Omega) $ + axiomy:\\
+\begin{enumerate}
+    \item $\emptyset \in \mathcal{F} \wedge \Omega \in \mathcal{F}$
+    \item $A \in \mathcal{F} \implies \Omega - \in $
+\end{enumerate}
+$P : \mathcal{F} \Rightarrow [0,1]$ + axiomy:\\
+\begin{enumerate}
+    \item $P(\emptyset) = 0, P(\Omega) = 1$
+    \item 
+\end{enumerate}
+Pravděpodobnostní prostor je trojice $\Omega , \mathcal{F} , P$\\\\
+
+Šance - "1 ku 2" $\frac{P(A)}{P(A^{c})}$
+
+Příklady\\
+Diskrétní\\
+Spojitý\\
+Bernoulliho krychle\\
+
+\section{Druhá přednáška pravděpodobnosti}
+
+Zřetězené podmiňování:\\
+$P(A \cap B) = P(B)P(A|B)$
+Pokud $A_{1},\dots,A_{n} \in \mathcal{F}$ a $P(A_{1}\cap \dots \cap A_{n})>0$ tak:
+$$P(A_{1}\cap \dots \cap A_{n}) = P(A_{1})P(A_{2}|A_{1})P(A_{3}|A_{1}\cap A_{2})...P(A_{n}|\bigcap_{i=1}^{n-1}A_{i})$$
+Příklad: vytáhneme 3 karty z balíčku 52 karet, jaká je P(žádné srdce).\\
+$A_{i}$ = i-tá karta není srdce. $P(A_{1} \cap A_{2} \cap A_{3})$ - podle vzorečku = $P(A_{1})P(A_{2}|A_{1})P(A_{3}|A_{1}\cap A_{2})$ = výsledek.\\\\
+
+\subsubsection*{Věta o úplné pravděpodobnosti}
+
+Spočetný systém množin $B_{1},B_{2}... \in \mathcal{F}$ je rozklad (partition) $\Omega$ pokud:
+\begin{enumerate}
+    \item $B_{i} \cap B_{j} = \emptyset$
+    \item $\bigcup_{i} B_{i} = \Omega$
+\end{enumerate}
+Pokud $B_{1},B_{2}... $ je rozklad a $A \in \mathcal{F}$, tak:
+$$P(A) = \sum_{i}P(B_{i})P(A|B_{i})$$
+Sčítance s $P(B_{i}) = 0$ ignorujeme. Důkaz triviální z manipulace množin.\\\\
+
+Příklad: Máme tři mince: P+O, P+P, O+O. Náhodně jednu vyberu a hodím s ní. Jaká je pravděpobodobnost, že padne orel?\\
+Druhý příklad: Máme a korun, protihráč má b korun, hrajeme opakovaně spravedlivou hru o 1 Kč, dokud někdo nepřijde o vše.
+Jaká je pravděpobodobnost, že vyhrajeme?\\
+To jsem nestihnul pobrat\\ % TODO 
+
+\subsubsection*{Bayesova věta}
+Pokud $B_{1},B_{2}... $ je rozklad, $A \in \mathcal{F}, P(A) > 0, P(B_{j}) > 0$ tak:\\
+$$P(B_{j}| A) = \frac{P(B_{j}P(A|B_{j}))}{P(A)}$$
+
+Příklad: test na COVID, $P(N|T) = 0.99, P(T|N) = 0.8$ podle Bayesovy věty:\\
+$$P(N|T) = \frac{P(N)P(T|N)}{P(N)P(T|N) + P(N^{c})P(T|N^{c})}$$\\
+
+\subsubsection*{Nezávislost jevů}
+Definice: dva jevy jsou nezávislé, pokud $P(A \cap B) = P(A)P(B)$. Pak také $P(A|B)=P(A)$ (pokud $P(B) > 0$).\\
+Nezávislost více jevů - jevy $\{A_{i} : i \in I\}$ jsou nezávislé, pokud pro každou konečnou množinu $J \subseteq I$:
+$$P(\bigcap_{i \in J} A_{i}) = \prod_{i \in J}P(A_{i})$$
+Pokud podmínka platí jen pro dvouprvkové množiny J, nazýváme jevy $\{A_{i}\}$ po dvou nezávislé.\\\\
+
+\subsubsection*{Spojitost pravděpodobnosti}
+Nechť pro množiny z prostoru jevů platí:
+$$A_{1} \subseteq A_{2} ...$$
+a $$A = \bigcup_{i=1}^{\infty}A_{i}$$ pak platí $$P(A) = \lim_{i \Rightarrow \infty}P(A_{i})$$
+
+
+\subsubsection*{Náhodná veličina}
+Často nás zajímá číslo dané výsledkem náhodného pokusu. Funkci $X : \Omega \rightarrow \mathbb{R}$ nazveme diskrétní náhodnou
+veličinou, pokud obor hodnot X je spočetná množina a pokud pro všechna reálná x platí 
+$$\{\omega \in \Omega : X(\omega)=x\} \in \mathcal{F}$$
+Pravděpodobnostní funkce (probability mass function, pmf) diskrétní náhodné veličiny je funkce $p_{X} : \mathbb{R} \rightarrow [0,1]$
+taková, že:
+$$p_{X}(x) = P(X = x) = P(\{\omega \in \Omega : X(\omega)=x\})$$
+
+\section{Třetí přednáška z pravděpobodobnosti}
+
+
+
+
+
+
+
+
+
+
+
+\section{Druhá přednáška Přírodou insp. algo}
+
+\subsection*{Zpětnovazební učení}
+Máme agenta a prostředí. Agent pozoruje prostředí a jedná v něm akcemi, dostává za to zpětnou vazbu
+- reward function.\\
+Příklad - autíčko v ďolíčku.\\
+Stav: x - poloha, v - rychlost\\
+Akce: $\{$ jet doleva, jet doprava, zůstat v klidu $\}$
+Reward function: -1 pokud x < 4 (auto není v cíli) jinak 0 - tím motivuji, aby se auto snažilo dostat do cíle co nejrychleji a zkoumalo
+nové stavy\\
+Agent maximalizuje celkový reward, který za celý běh dostane.\\
+\subsubsection*{Prostředí a akce}
+Prostředí může být diskrétní nebo spojité. U autíčka je spojité prostředí, ale akce jsou diskrétní. Kdyby autíčko mohlo otáčet volantem
+o libovolný reálný úhel, tak by i jeho akce byly spojité.\\
+Dále řešíme zda prostředí je deterministické / nedeterministické. Stejně tak plně / částečně pozorovatelné. Jednoagentní / multiagentní.\\\\
+
+
+\subsubsection*{Markovské rozhodovací procesy (MDP)}
+Je čtveřice $(S,A,P,R)$, kde \\
+\begin{enumerate}
+    \item S - množina stavů ve kterých může prostředí být
+    \item A - množina akcí ($A_{S}$ akce které lzou udělat ve stavu $s \in S$)
+    \item $P_{a}$ - binární funkce na stavech - přechodová funkce - pravděpodobnost, že když ve stavu s udělám akci a, tak prostředí přejde do stavu s'
+    \item $R_{a}$ - binární funkce na stavech - reward function
+\end{enumerate}
+Chování agenta - strategie (policy) $\pi : S \times A \rightarrow [0,1], \pi (s,a)$ pravděpodobnost provedení akce a ve stavu s.\\
+Cíl učení je najít $\pi$, která maximalizuje sumu odměn: $R = \sum_{t=0}^{\infty}\gamma^{t}R_{a_{t}}(s_{t},s_{t+1})$, 
+$a_{k} = \pi (s_{t})$ (akce provedená agentem v t). $\gamma$ - diskontní faktor - aby suma nebyla nekonečná.\\
+Takhle máme ve vzorečku nedeterminističnost schovanou v pravděpobodobnosti funkci $\pi$, lze vyřešit zabalením do středních hodnot.\\\\
+
+Zavedeme dvě další funkce:\\
+$V^{\pi}(s) = \mathbb{E}[R] = \mathbb{E}[\sum_{0}^{\infty} \gamma^{t} v_{t} | s_{i} = s]$ - hodnota stavu - očekávaná odměna pokud používám
+strategii $\pi$ a začal jsem ve stavu s.\\
+$Q^{\pi}(s,a)$ ... hodnota akce a ve stavu s = celková očekávaná odměna, pokud ve stavu s provedu akci a, potom pokračuji podle $\pi$.\\
+Jsem ve stavu s, co udělám? Vyberu akci $\arg\max_{a \in A}Q(s,a)$.\\\\
+
+Pokud máme ale jen funkci V, tak volím akci takto:\\
+$$\arg\max_{a \in A} \sum_{s_{t}} P_{a}(s,s_{t})[R_{a}(s,s_{t}) + \gamma V(s_{t})]$$
+
+Cíl je najít $\pi^{\star}$ t.ž.: $V^{\pi^{\star}}(s) = \max_{\pi} V^{\pi}(s)$.\\
+Potřebujeme agenta motivovat, aby se pokoušel o nové strategie. Nebýt tedy greedy, ale $\epsilon$-greedy - ta s pravděpobodobností $\epsilon$
+vybírá akci (jen během učení). Tím eliminuji zaseknutí se v lokálním extrému.\\\\
+
+\subsubsection*{Monte Carlo metoda pro odhad $Q^{\pi}(s,a)$ }
+Simuluji chování agenta podle $\pi$, čímž "sampluji" funkci $Q$. Místo zcela náhodné strategie mohu volit $\pi$ podle už zjištěných hodnot
+funkce $Q$ (s nějakým $\epsilon$, abych se nezaseknul v lokálním extrému). Velká nevýhoda - musím pořád spouštět simulaci - nevyužívám
+závislosti odměny za stav a za následující stav, tuto závislost modelují Bellmanovy rovnice. Co tyto závislosti započítává jsou tzv.
+temporal difference metody. Díky tomu se mi pak i propagují odměny časově odzadu dopředu.\\\\
+
+Základní temporal difference metoda se jmenuje Q-učení.\\
+\subsubsection*{Q-učení}
+$Q(s_{t},a_{t}) \leftarrow (1-\alpha)Q(s_{t},a_{t}) + \alpha(r_{t} + \gamma \max_{a}Q(s_{t+1},a_{t}))$
+Dělám v každém kroku. $\alpha$ je nějaký learning rate.\\\\
+
+\section{Evoluční algoritmy}
+Třída optimalizačních algoritmů. Typicky jsou maximalizační - což není omezení, minimalizaci můžeme vždy
+transformovat na maximalizaci. Na druhou stranu to není vždy úplně snadné a minimalizace je v matematice častější.\\
+Jedinci - kandidáti na řešení - mohou to být vektory, čísla, i neuronové sítě.\\
+Fitness funkce - jedinci $\rightarrow \mathbb{R}$ udává kvalitu řešení.\\\\
+
+Inicializace - náhodní jedinci. Následuje ohodnocení - zvolím si jednoduché: maximalizuji počet jedniček
+v daném jedinci (vektoru jedniček a nul). Následuje selekce - vybírá jedince podle jejich fitness, ti co
+mají větší fitness mají i větší šanci přežít. Následuje křížení - kombinuje selektované jedince - v našem
+případě rozdělím vektory v náhodném bodě a prohodím části vektorů. Nakonec je mutace - prochází jedincem a
+náhodně ho změní - v našem případě flipne náhodné bity.\\\\
+
+Ruletová selekce : $$p_{i} = \frac{f_{i}}{\sum f_{j}}$$ Vlastnost této selekce je, že mohu odečítat / přičítat konstanty
+k fitnessům abych zdůraznil / zmírnil výběr nejsilnějších jedinců.\\
+SUS - stochastic universal sampling.\\
+Turnajová selekce - záleží pouze na uspořádání podle fitness, ne konkrétních hodnotách fitness.\\\\
+
+\subsubsection*{Genetické operátory - křížení a mutace}
+Buď jedno nebo dvoubodové - jestli rozdělím a spojím dva jedince na jednom nebo dvou místech. Uniformní - na každé pozici
+buď prohodím nebo neprohodím.\\
+Mutace - dokud mám vektory jedniček a nul velmi jednoduché - prohodím každý bit s malou pravděpodobností.
+
+\end{document}

@@ -1,0 +1,18 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ae} 
+\usepackage{tikz}
+\usepackage[margin=1in]{geometry}
+\title{Knapsack pomocí evoluce}
+\author{Vojtěch Šára}
+\begin{document}
+\maketitle
+Jedince jsem kódoval pomocí indikátorových vektorů - tedy jedinec 1, 0, 1 odpovídá tomu, že první a třetí předmět se do batohu
+vyberou a prostřední ne. Díky tomu je spočítání fitness jedno maticové násobení.\\
+Selekci jsem vybral ruletovou, protože mi experimentálně vyšla trochu lepší.\\
+Mutace je náhodný bitflip, nic jiného ani s použitým kódováním nepřipadá v úvahu, nějaké permutování by zcela vymazalo informaci o jedinci.\\
+Mutaci jsem nastavil po vyzkoušení více hodnot na 0.8, protože mi experimentálně vyšla
+takto trochu agresivnější mutace lépe, jinak se simulace příliš zasekává v latentním prostoru
+na nějakém lokálním minimu, agresivnější mutace pomáhá z těchto lokálních minim vyšťouchávat.
+\end{document}

@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ae} 
+\usepackage[margin=1in]{geometry}
+\title{Neprocedurální programování 1}
+\author{Vojtěch Šára}
+\begin{document}
+\maketitle
+Program v prologu se skládá z klauzulí. Funktory + atomy = termy, s tečkou na konci z toho je klauzule.
+\begin{center}
+    muz(adam).\\
+    muz(kain).\\
+    muz(abel).\\
+    zena(eva).\\
+    rodic(adam,kain).\\
+    rodic(adam,abel).\\
+    rodic(eva,abel).\\
+    rodic(eva,kain).\\
+\end{center}
+Toto definuje například predikát muz() - ten je definovaný právě na těch prvcích, které vyjmenujeme. Pak se můžeme
+ptát na dotazy a zkompilovaný program prologu nám odpoví true nebo false. Nebo můžeme zadat dotaz "muz(X)"
+což nám vypíše všechny hodnoty, pro které platí, že jsou muž.\\
+Více dotazů můžeme spojit čárkou (= konjunkcí).\\\\
+
+Chceme přidat predikát otec. To uděláme pomocí pravidla:\\
+otec(Kdo, Dite) :- rodic(Kdo, Dite), muz(Kdo)\\
+Toto se při dotazu "Otec(adam,kain)" vyhodnocuje rekurzivně - deklarovali jsme cíl, ten se rozdělí na 
+podcíle, splnění všech podcílů indikuje úspěch - splnění cíle. \\\\\
+
+\subsection*{Procedura s více pravidly}
+clovek(C) :- zena(C).
+clovek(C) :- muz(C).
+! klauzule jsou procházeny v pořadí, ve kterém jsou napsány. To, co jsme napsali, je skrytá disjunkce.
+Jinak disjunkci mohu napsat pomocí středníku.\\\\
+
+bratr(Bratr,Osoba):- rodic(R,Bratr),rodic(R,Osoba),muz(Bratr). Nedefinuje bratra korektně! Potřebujeme,
+aby Bratr a Osoba byly různé. Na to potřebujeme negaci, ta se píše backslash =. \\\\
+
+Anonymní proměnná - $\_$ na názvu této proměnní nezáleží - nechci jí použít nikdy znovu.\\\\
+
+% Druhá přednáška
+term - (jednoduchý - (konstanta - atom / číslo / []) / proměnná) / (složený)\\
+složený - muz(adam) = funktor s jednoduchým nebo složeným termem, rekurzivní definice\\\\
+
+Program se skládá z procedur, procedura je posloupnost klauzulí.\\
+Fakt = pravidlo s prázdným tělem. \\
+Direktiva = pravidlo s prázdnou hlavou, např :- consult(demo). toto je command pro překladač.\\
+\subsubsection*{Procedurální versus neprocedurální}
+Proc.: proměnné - deklarovány, lokální / globální, změna hodnoty přiřazením\\
+Neproc.: proměnné - dynamická alokace paměti - GC, platnost proměnné je omezena na klauzuli, v níž se vyskytuje.
+Proměnná volná / vázaná.\\
+Proc.: datový typ záznam - položky identifikovány jménem.\\
+Neproc.: složený term - položky identifikovány polohou, stromová struktura.\\\\
+
+\subsubsection*{Řešení Einsteinovy hádanky}
+Strategie - použijeme složené termy.\\
+kolej(\_,\_,pokoj(\_,\_,\_,skyrim,\_),pokoj(gates,\_,\_,\_,\_),pokoj(\_,brno,\_,\_,\_)) - toto je dobrý první krok, další neuvádíme.\\\\
+
+\subsubsection*{Syntax - Operátory}
+Proc.: výrazy - a+b\\
+Neproc.: adam \= eva\\
+
+Unifikace - dva terma lze unifikovat, pokud jsou identické, nebo se stanou identickými po substituci vhodné hodnoty proměnným v obou 
+termech.\\
+Unifikační algoritmus - ten je vyvolán =. Algoritmus se pokusí najít substituci, která unifikuje.
+
+\subsubsection*{Peano aritmetika v prologu}
+prirozene\_cislo(X) :- X je přirozené číslo.\\
+prirozene\_cislo(0). \\
+prirozene\_cislo(s(X)) - s je succesor\\\\
+
+mensi(X,Y):- X je ostře menší než Y\\
+mensi(0,s(X)) :- prirozene\_cislo(X).\\
+mensi(s(X),s(Y)) :- mensi(X,Y).\\\\
+
+\subsubsection*{Strukturální rekurze}
+Řízena strukturou argumentů - rekurzivní datová struktura. Složená z báze a kroku rekurze, realizovaným rekurzivním pravidlem.\\
+soucet(0,X,X) :- prirozene\_cislo(X).\\
+soucet(s(X),Y,s(Z)) :- soucet(X,Y,Z).\\\\
+
+\subsubsection*{Seznamy}
+Seznam realizovaný pomocí relace. Zápis [a,b,c].
+
+
+
+
+
+
+\end{document}

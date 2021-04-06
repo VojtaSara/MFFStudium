@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{rotating}
+\usepackage{longtable}
+\usepackage{ae} 
+\usepackage[margin=1in]{geometry}
+\title{1. Dú z pravděpobodobnosti a statistiky}
+\author{Vojtěch Šára}
+\begin{document}
+\maketitle
+% \usepackage{longtable}
+\begin{sidewaystable}
+    
+
+
+\begin{longtable}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|} 
+    \hline
+    1 &   &   &   &   &   & 2 &   &   &   &   &   & 3 &   &   &   &   &   & 4 &   &   &   &   &   & 5 &   &   &   &   &   & 6 &   &   &   &   &    \endfirsthead 
+    \hline
+    1 & 2 & 3 & 4 & 5 & 6 & 1 & 2 & 3 & 4 & 5 & 6 & 1 & 2 & 3 & 4 & 5 & 6 & 1 & 2 & 3 & 4 & 5 & 6 & 1 & 2 & 3 & 4 & 5 & 6 & 1 & 2 & 3 & 4 & 5 & 6  \\ 
+    \hline
+      &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   & X &   &   &   &   & X &   &   &   &   & X &   &    \\ 
+    \hline
+      &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   &   & X & X & X & X & X & X  \\ 
+    \hline
+      &   &   &   &   & X &   &   &   &   &   & X &   &   &   &   &   & X &   &   &   &   &   & X &   &   &   &   &   & X &   &   &   &   &   & X  \\
+    \hline
+    \end{longtable}
+
+\end{sidewaystable}
+
+Vytvořil jsem si tabulku všech možností (na následující straně) - první řádek odpovídá tomu, co padlo na první kostce,
+druhý řádek tomu co na druhé. Následující tři řádky odpovídají třem jevům:\\
+a) Součet = 10\\
+b) Na první padlo 6\\
+c) Na jedné z kostek padlo 6\\
+Pravděpodobnosti snadno vyčtu z tabulky, vždy kolik příslušný řádek obsahuje "X" děleno všemy jevy.
+(Počítám s tím, že kostka je férová a pravděpobodobnostní prostor je tedy klasický).\\
+$$P(\textbf{a)}) = \frac{1}{12} $$
+$$P(\textbf{b)}) = \frac{1}{6} $$
+$$P(\textbf{c)}) = \frac{11}{36} $$
+Podmíněné pravděpodobnosti také snadno vyčtu z tabulky s pomocí vzorečku:
+$$P(A | B) = \frac{P(A \cap B)}{P(B)}$$
+Kde pravděpodobnost průniku je počet X které sdílí dva dané řádky děleno 36.\\
+$$P(\textbf{a) | b)}) = \frac{1}{6}$$
+$$P(\textbf{a) | c)}) = \frac{2}{11}$$
+$$P(\textbf{b) | a)}) = \frac{1}{3}$$
+$$P(\textbf{b) | c)}) = \frac{6}{11}$$
+$$P(\textbf{c) | a)}) = \frac{2}{3}$$
+$$P(\textbf{c) | b)}) = \frac{1}{1}$$
+\end{document}

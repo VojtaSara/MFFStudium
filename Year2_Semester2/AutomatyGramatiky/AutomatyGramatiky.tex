@@ -1,0 +1,103 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ae} 
+\usepackage[margin=1in]{geometry}
+\title{Automaty a gramatiky 1}
+\author{Vojtěch Šára}
+\begin{document}
+\maketitle
+Nejjednodušší automat je vypínač. 
+Deterministický konečný automat (DFA) $A = (Q,\Sigma, \delta, q_{0},F)$\\
+Q - konečná neprázdná množina stavů\\
+$\Sigma$ - konečná neprázdná množina vstupních symbolů abecedy\\
+$\delta$ - přechodová funkce $Q \times \Sigma \rightarrow Q$ typicky reprezentovaná hranami grafu\\
+$q_{0} \in Q$ - počáteční stav, vede do něj šipka odnikud.\\
+F - množina koncových stavů\\\\
+
+Pro představu si můžeme představit vyhledávací automat z Knuth Morris Pratta.\\\\
+
+Automat mohu reprezentovat diagramem, tabulkou či stavovým stromem.\\
+
+Slovo je konečná (i prázdná) posloupnost symbolů z $\Sigma$, prázdné slovo se značí $\lambda \vee \epsilon$
+Množina všech slov v abecedě $\Sigma$ značíme $\Sigma^{\star}$\\
+Množina neprázdných slov je $\Sigma^{+}$\\
+Jazyk je množina slov v abecedě $\Sigma$ - $L \subseteq \Sigma^{\star}$\\\\
+
+Zřetězení - $u.v$ nebo $uv$\\
+Mocnina (jen přirozenými) - ($u^{0} = \lambda, u^{1} = u, u^{n+1} = u^{n}.u$)\\
+Délka slova $|auto| = 4$\\
+Počet výskytů je kolikrát je podřetězec v řetězci.\\
+
+Rozšířená přechodová funkce $\delta^{\star}$ je transitivní uzávěr funkce $\delta$\\\\
+
+Jazyk je rozpoznatelný konečným automatem jestliže existuje konečný automat A takový,
+že  $L = L(A) = \{w | w \in \Sigma^{\star} \wedge \delta^{\star}(q_{0},w) \in F\}$\\\\
+
+Jazyky rozpoznatelné konečnými automaty nazýváme regulární.\\\\
+
+Jsou jazyky, které nejsou regulární. \\\\
+
+\subsection{Iterační (pumping) lemma}
+Mějme regulární jazyk L. Pak existuje $n \in \mathbb{N}$ závislá na L, taková, že:
+každé $w \in L; |w| \geq n$ můžeme rozděliz na tři části, w = xyz, že:\\
+\begin{enumerate}
+    \item $y \neq \lambda$
+    \item |xy| $\leq n$
+    \item $\forall k \in \mathbb{N}_{0}$ slovo $xy^{k}z$ je také v L.
+\end{enumerate}
+Důkaz:\\
+Regulární - existuje DFA A s n stavy, že L = L(A).\\
+Vezměme libovolné slovo z L délky $m \geq n$.\\
+Zbytek důkazu neni.\\\\
+
+% Druhá přednáška
+
+\subsubsection*{Kongruence}
+Na konečné abecedě $\Sigma$ a relaci ekvivalence $\sim$ na $\Sigma^{\star}$. Potom:
+\begin{enumerate}
+    \item $\sim$ je pravá kongruence, jestliže $(\forall u,v,w \in \Sigma^{\star})u \sim v \Rightarrow uw \sim vw$
+    \item $\sim$ je konečného indexu, jestliže rozklad $\Sigma^{\star} / \sim$ má konečný počet tříd.
+    \item Třídy kongruence = $[u]_{\sim}$
+\end{enumerate}
+
+\subsubsection*{Myhill-Nerodova věta}
+Nechť L je jazyk nad konečnou abecedou $\Sigma$. Potom následující je ekvivalentní:
+\begin{enumerate}
+    \item L je rozpoznatelný konečným automatem
+    \item existuje pravá kongruence konečného indexu tak, že L je sjednocením jistých tříd rozkladu $\Sigma^{\star} / \sim$
+\end{enumerate}
+Pro důkaz definuji ekvivalenci jako slova, která nás z počátečního stavu dostanou do stejného stavu. Tato ekvivalence
+je ekvivalencí, je to i pravá kongruence.\\
+Pro druhý směr volíme stavy jako třídy rozkladu $\Sigma^{\star} / \sim$\\
+Počáteční stav $q_{0}$...\dots\\\\
+
+Věta Myhil-Nerod je konstruktivní, nabízí nám tedy návod jak sestavit automat. Na přednášce tady byl příklad.\\\\
+
+Zajímavost: jazyk $L = \{u|u = a^{+}b^{i}c^{i} \vee u = b^{i}c^{j}\}$ není regulární (Myhill-Nerod) ale vždy lze pumpovat
+první písmeno.
+
+\subsubsection*{Dosažitelnost}
+Stav je dosažitelný, pokud existuje slovo, kterým se do něj z počátečního stavu dostanu. Dosažitelné stavy
+hledáme iterativně - nějaký průchod stavovým prostorem. Korektnost - nachází pouze dosažitelné stavy, 
+Úplnost - všechny dosažitelné stavy najdu.\\\\
+
+\subsubsection*{Nejednoznačnost}
+Automat přijímající daný jazyk není určen jednoznačně. Tady byl na přednášce příklad takového jazyka.
+
+\subsubsection*{Automatový homomorfismus}
+$h : Q_{1} \rightarrow Q_{2}$ je automat. homomorfismus, jestliže:\\
+\begin{enumerate}
+    \item $h(q_{0_{1}}) = q_{0_{2}}$
+    \item $h(\delta_{1}(q,x)) = \delta_{2}(h(q),x)$stejné přechodové funkce
+    \item stejné koncové stavy
+\end{enumerate}
+
+\subsubsection*{Ekvivalence automatů}
+Dva konečné automaty jsou ekvivalentní, pokud rozpoznávají stejný jazyk. Homomorfismus implikuje ekvivalenci.\\
+Jestli jsou všechny stavy ekvivalentní, pak jsou automaty ekvivalentní. Neekvivalentní = rozlišitelné.\\\\
+
+Existuje algoritmus hledání všech rozlišitelných stavů. Postupně vyškrtávám nehodící. Tento algoritmus je korektní.\\
+Algoritmus nalezení reduktu - vyškrtnu nedosažitelné, pak spojím ekvivalentní stavy. Tím dostávám redukovaný DFA.\\
+
+\end{document}

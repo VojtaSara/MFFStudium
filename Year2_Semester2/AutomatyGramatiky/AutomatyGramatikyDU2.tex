@@ -1,0 +1,18 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ae} 
+\usepackage[margin=1in]{geometry}
+\title{Druhý domácí úkol z Automatů a Gramatik}
+\author{Vojtěch Šára}
+\begin{document}
+\maketitle
+Libovolnou metodou dokažte, že jazyk $L=\left\{w\left|w \in\{1\}^{*},\right| w \mid=p, p\right.$ je prvočíslo $\}$ není regulární.\\\\
+Tvrzení dokážu obměnou pumping lemmatu. Konkrétněji tedy ukážu, že pro jakkoli zvolené n se mohu vypumpovat z jazyka ven.
+Začnu volbou prvočísla, které je větší než $n$, označme ho $p$. Pak mohu vzít slovo $w = 1^{p}$. Slovo $w$ rozložíme na $w=xyz$, délku
+prostřední části - $|y|$ označíme písmenem $a$. $|xz| = p - a$. Pumping lemma nám říká, že pumpováním tohoto slova zůstaneme v jazyce,
+konkrétně například slovo $xy^{p-a}z$ by mělo být v jazyce. Když si ale rozepíšeme, co by to znamenalo:
+$$|xy^{p-a}z| = |xz| + |y^{p-a}| = p-a + |y|(p-a) = (p-a)(1+|y|) = (p-a)(1+a)$$
+Jelikož bylo $a$ větší než nula, tak nám tato rovnice říká, že $|xy^{p-a}z|$ je nutně složené číslo, protože je násobkem dvou nějakých
+čísel.
+\end{document}

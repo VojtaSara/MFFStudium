@@ -1,0 +1,179 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ae} 
+\usepackage{tikz}
+\usepackage[margin=1in]{geometry}
+\title{Čtvrtý domácí úkol z Automatů a Gramatik}
+\author{Vojtěch Šára}
+\begin{document}
+\maketitle
+
+\begin{center}
+    \begin{tikzpicture}[scale=0.2]
+    \tikzstyle{every node}+=[inner sep=0pt]
+    \draw [black] (11.4,-30.9) circle (3);
+    \draw (11.4,-30.9) node {$A$};
+    \draw [black] (26.1,-10.6) circle (3);
+    \draw (26.1,-10.6) node {$B$};
+    \draw [black] (44.5,-22) circle (3);
+    \draw (44.5,-22) node {$C$};
+    \draw [black] (56.8,-14.3) circle (3);
+    \draw (56.8,-14.3) node {$D$};
+    \draw [black] (56.8,-14.3) circle (2.4);
+    \draw [black] (36,-47.4) circle (3);
+    \draw (36,-47.4) node {$E$};
+    \draw [black] (51.3,-53.8) circle (3);
+    \draw (51.3,-53.8) node {$F$};
+    \draw [black] (-3.4,-29.5) -- (8.41,-30.62);
+    \fill [black] (8.41,-30.62) -- (7.66,-30.04) -- (7.57,-31.04);
+    \draw [black] (13.89,-32.57) -- (33.51,-45.73);
+    \fill [black] (33.51,-45.73) -- (33.12,-44.87) -- (32.57,-45.7);
+    \draw (22.75,-39.65) node [below] {$a$};
+    \draw [black] (13.16,-28.47) -- (24.34,-13.03);
+    \fill [black] (24.34,-13.03) -- (23.47,-13.38) -- (24.28,-13.97);
+    \draw (19.34,-22.13) node [right] {$b$};
+    \draw [black] (28.65,-12.18) -- (41.95,-20.42);
+    \fill [black] (41.95,-20.42) -- (41.53,-19.57) -- (41.01,-20.42);
+    \draw (34.3,-16.8) node [below] {$b$};
+    \draw [black] (47.04,-20.41) -- (54.26,-15.89);
+    \fill [black] (54.26,-15.89) -- (53.31,-15.89) -- (53.84,-16.74);
+    \draw (51.65,-18.65) node [below] {$b$};
+    \draw [black] (51.8,-27.9) -- (46.83,-23.89);
+    \fill [black] (46.83,-23.89) -- (47.14,-24.78) -- (47.77,-24);
+    \draw [black] (29.08,-10.96) -- (53.82,-13.94);
+    \fill [black] (53.82,-13.94) -- (53.09,-13.35) -- (52.97,-14.34);
+    \draw (40.55,-13.26) node [below] {$lambda$};
+    \draw [black] (38.77,-48.56) -- (48.53,-52.64);
+    \fill [black] (48.53,-52.64) -- (47.99,-51.87) -- (47.6,-52.79);
+    \draw (42.74,-51.11) node [below] {$a$};
+    \draw [black] (35.22,-44.5) -- (26.88,-13.5);
+    \fill [black] (26.88,-13.5) -- (26.6,-14.4) -- (27.57,-14.14);
+    \draw (31.82,-28.49) node [right] {$lambda$};
+    \draw [black] (36.95,-44.56) -- (43.55,-24.84);
+    \fill [black] (43.55,-24.84) -- (42.82,-25.44) -- (43.77,-25.76);
+    \draw (41.02,-35.41) node [right] {$lambda$};
+    \draw [black] (51.71,-50.83) -- (56.39,-17.27);
+    \fill [black] (56.39,-17.27) -- (55.78,-17.99) -- (56.77,-18.13);
+    \draw (54.74,-34.21) node [right] {$a$};
+    \end{tikzpicture}
+    \end{center}
+
+Začínáme ve stavech A,C a koukáme se, kam se postupně dostaneme -
+v průběhu tak odstraňujeme lambdy, vytváříme nedeterministický automat. 
+
+\begin{table}[]
+    \begin{tabular}{lll}
+                              & a                                & b                                \\ \cline{2-3} 
+    \multicolumn{1}{l|}{$\rightarrow$AC}   & \multicolumn{1}{l|}{BCDE}        & \multicolumn{1}{l|}{DB}          \\ \cline{2-3} 
+    \multicolumn{1}{l|}{$\star$BCDE} & \multicolumn{1}{l|}{F}           & \multicolumn{1}{l|}{CD}          \\ \cline{2-3} 
+    \multicolumn{1}{l|}{$\star$DB}   & \multicolumn{1}{l|}{$\emptyset$} & \multicolumn{1}{l|}{C}           \\ \cline{2-3} 
+    \multicolumn{1}{l|}{F}    & \multicolumn{1}{l|}{D}           & \multicolumn{1}{l|}{$\emptyset$} \\ \cline{2-3} 
+    \multicolumn{1}{l|}{$\star$CD}   & \multicolumn{1}{l|}{$\emptyset$} & \multicolumn{1}{l|}{D} \\ \cline{2-3} 
+    \multicolumn{1}{l|}{C}    & \multicolumn{1}{l|}{$\emptyset$} & \multicolumn{1}{l|}{D} \\ \cline{2-3} 
+    \multicolumn{1}{l|}{$\star$D}    & \multicolumn{1}{l|}{$\emptyset$} & \multicolumn{1}{l|}{$\emptyset$} \\ \cline{2-3} 
+    \end{tabular}
+    \end{table}
+Tento nedeterministický automat vypadá takto:\\\\
+
+
+\begin{center}
+    \begin{tikzpicture}[scale=0.2]
+    \tikzstyle{every node}+=[inner sep=0pt]
+    \draw [black] (11.4,-30.9) circle (3);
+    \draw (11.4,-30.9) node {$A,C$};
+    \draw [black] (26.1,-10.6) circle (3);
+    \draw (26.1,-10.6) node {$D,B$};
+    \draw [black] (26.1,-10.6) circle (2.4);
+    \draw [black] (39.8,-12.3) circle (3);
+    \draw (39.8,-12.3) node {$C$};
+    \draw [black] (56.8,-14.3) circle (3);
+    \draw (56.8,-14.3) node {$D$};
+    \draw [black] (56.8,-14.3) circle (2.4);
+    \draw [black] (29.6,-48) circle (3);
+    \draw (29.6,-48) node {$B,C,D,E$};
+    \draw [black] (29.6,-48) circle (2.4);
+    \draw [black] (51.3,-53.8) circle (3);
+    \draw (51.3,-53.8) node {$F$};
+    \draw [black] (32.8,-34.5) circle (3);
+    \draw (32.8,-34.5) node {$C,D$};
+    \draw [black] (32.8,-34.5) circle (2.4);
+    \draw [black] (-3.4,-29.5) -- (8.41,-30.62);
+    \fill [black] (8.41,-30.62) -- (7.66,-30.04) -- (7.57,-31.04);
+    \draw [black] (13.59,-32.95) -- (27.41,-45.95);
+    \fill [black] (27.41,-45.95) -- (27.17,-45.03) -- (26.49,-45.76);
+    \draw (19.54,-39.93) node [below] {$a$};
+    \draw [black] (13.16,-28.47) -- (24.34,-13.03);
+    \fill [black] (24.34,-13.03) -- (23.47,-13.38) -- (24.28,-13.97);
+    \draw (19.34,-22.13) node [right] {$b$};
+    \draw [black] (29.08,-10.97) -- (36.82,-11.93);
+    \fill [black] (36.82,-11.93) -- (36.09,-11.34) -- (35.97,-12.33);
+    \draw (32.68,-12.04) node [below] {$b$};
+    \draw [black] (32.5,-48.77) -- (48.4,-53.03);
+    \fill [black] (48.4,-53.03) -- (47.76,-52.34) -- (47.5,-53.3);
+    \draw (39.73,-51.46) node [below] {$a$};
+    \draw [black] (30.29,-45.08) -- (32.11,-37.42);
+    \fill [black] (32.11,-37.42) -- (31.44,-38.08) -- (32.41,-38.31);
+    \draw (31.96,-41.67) node [right] {$b$};
+    \draw [black] (51.71,-50.83) -- (56.39,-17.27);
+    \fill [black] (56.39,-17.27) -- (55.78,-17.99) -- (56.77,-18.13);
+    \draw (54.74,-34.21) node [right] {$a$};
+    \draw [black] (35.1,-32.57) -- (54.5,-16.23);
+    \fill [black] (54.5,-16.23) -- (53.57,-16.36) -- (54.21,-17.13);
+    \draw (45.81,-24.89) node [below] {$b$};
+    \draw [black] (42.78,-12.65) -- (53.82,-13.95);
+    \fill [black] (53.82,-13.95) -- (53.08,-13.36) -- (52.97,-14.35);
+    \draw (48.05,-13.89) node [below] {$b$};
+    \end{tikzpicture}
+    \end{center}
+
+
+Vznikne nám tento deterministický automat, ve kterém jasně
+vidíme, že stav C,D je redundantní, finální redukovaný automat 
+by tedy měl vypadat následovně:\\\\
+
+\begin{center}
+    \begin{tikzpicture}[scale=0.2]
+    \tikzstyle{every node}+=[inner sep=0pt]
+    \draw [black] (11.4,-30.9) circle (3);
+    \draw (11.4,-30.9) node {$A,C$};
+    \draw [black] (26.1,-10.6) circle (3);
+    \draw (26.1,-10.6) node {$D,B$};
+    \draw [black] (26.1,-10.6) circle (2.4);
+    \draw [black] (39.8,-12.3) circle (3);
+    \draw (39.8,-12.3) node {$C$};
+    \draw [black] (56.8,-14.3) circle (3);
+    \draw (56.8,-14.3) node {$D$};
+    \draw [black] (56.8,-14.3) circle (2.4);
+    \draw [black] (29.6,-48) circle (3);
+    \draw (29.6,-48) node {$B,C,D,E$};
+    \draw [black] (29.6,-48) circle (2.4);
+    \draw [black] (51.3,-53.8) circle (3);
+    \draw (51.3,-53.8) node {$F$};
+    \draw [black] (-3.4,-29.5) -- (8.41,-30.62);
+    \fill [black] (8.41,-30.62) -- (7.66,-30.04) -- (7.57,-31.04);
+    \draw [black] (13.59,-32.95) -- (27.41,-45.95);
+    \fill [black] (27.41,-45.95) -- (27.17,-45.03) -- (26.49,-45.76);
+    \draw (19.54,-39.93) node [below] {$a$};
+    \draw [black] (13.16,-28.47) -- (24.34,-13.03);
+    \fill [black] (24.34,-13.03) -- (23.47,-13.38) -- (24.28,-13.97);
+    \draw (19.34,-22.13) node [right] {$b$};
+    \draw [black] (29.08,-10.97) -- (36.82,-11.93);
+    \fill [black] (36.82,-11.93) -- (36.09,-11.34) -- (35.97,-12.33);
+    \draw (32.68,-12.04) node [below] {$b$};
+    \draw [black] (32.5,-48.77) -- (48.4,-53.03);
+    \fill [black] (48.4,-53.03) -- (47.76,-52.34) -- (47.5,-53.3);
+    \draw (39.73,-51.46) node [below] {$a$};
+    \draw [black] (51.71,-50.83) -- (56.39,-17.27);
+    \fill [black] (56.39,-17.27) -- (55.78,-17.99) -- (56.77,-18.13);
+    \draw (54.74,-34.21) node [right] {$a$};
+    \draw [black] (42.78,-12.65) -- (53.82,-13.95);
+    \fill [black] (53.82,-13.95) -- (53.08,-13.36) -- (52.97,-14.35);
+    \draw (48.05,-13.89) node [below] {$b$};
+    \draw [black] (31.48,-45.67) -- (54.92,-16.63);
+    \fill [black] (54.92,-16.63) -- (54.02,-16.94) -- (54.8,-17.57);
+    \draw (43.76,-32.58) node [right] {$b$};
+    \end{tikzpicture}
+    \end{center}
+    
+\end{document}
