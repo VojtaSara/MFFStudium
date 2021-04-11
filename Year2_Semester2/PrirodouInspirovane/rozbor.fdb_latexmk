@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1617720356 "c:/Users/monib/Vojta/School/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.tex" "c:/Users/monib/Vojta/School/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.pdf" "rozbor" 1617720360
+["pdflatex"] 1617962585 "c:/Users/monib/Vojta/School/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.tex" "c:/Users/monib/Vojta/School/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.pdf" "rozbor" 1617962590
   "C:/Users/monib/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1608652573 10294399 ecf134646c7d78c499fdfd0f98716cc9 ""
   "C:/Users/monib/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1614675246 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1000.tfm" 993062122 3148 7e594c8240c71e432203f65ab5f95a51 ""
@@ -123,10 +123,10 @@
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfkeys.sty" 1601581771 274 5ae372b7df79135d240456a1c6f2cf9a ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs.sty" 1601581771 325 f9f16d12354225b7dd52a3321f085955 ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1463135581 57049 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/monib/Vojta/School/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.aux" 1617720359 32 3985256e7290058c681f74d7a3565a19 ""
-  "c:/Users/monib/Vojta/School/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.tex" 1617720355 1034 cb226dadca09f26cbcbf5317e70bac3c ""
-  "rozbor.aux" 1617720359 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "rozbor.tex" 1617720355 1034 cb226dadca09f26cbcbf5317e70bac3c ""
+  "c:/Users/monib/Vojta/School/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.aux" 1617962589 32 3985256e7290058c681f74d7a3565a19 ""
+  "c:/Users/monib/Vojta/School/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.tex" 1617962582 1035 08dfd11afad3345d907aa7fbe7428ed9 ""
+  "rozbor.aux" 1617962589 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "rozbor.tex" 1617962582 1035 08dfd11afad3345d907aa7fbe7428ed9 ""
   (generated)
   "rozbor.aux"
   "c:/Users/monib/Vojta/School/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.log"
