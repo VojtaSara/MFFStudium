@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.11) (preloaded format=xelatex 2020.11.15)  8 APR 2021 11:26
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.22)  9 APR 2021 12:03
+>>>>>>> 93b4dcf8a1943019b676d900cdf1cb2e10f8f6df
 entering extended mode
 **"d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.tex"
 ("d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.tex"
@@ -319,6 +323,7 @@ Overfull \hbox (12.57385pt too wide) in paragraph at lines 34--65
 
 [2] [3] ("d:/School - MATFYZ\MFFStudium\Year2_Semester2\PrirodouInspirovane\rozbor.aux") ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  5009 strings out of 412197
  120247 string characters out of 2849632
  469624 words of memory out of 3000000
@@ -326,5 +331,20 @@ Here is how much of TeX's memory you used:
  542779 words of font info for 55 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  94i,6n,99p,346b,213s stack positions out of 5000i,500n,10000p,200000b,50000s
+=======
+ 13467 strings out of 479798
+ 267025 string characters out of 2869704
+ 507637 words of memory out of 3000000
+ 30217 multiletter control sequences out of 15000+200000
+ 548163 words of font info for 61 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 108i,6n,111p,496b,216s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on c:/Users\monib\Vojta\School\MFFStudium\Year2_Semester2\PrirodouInspirovane\rozbor.pdf (1 page, 42141 bytes).
+PDF statistics:
+ 21 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> 93b4dcf8a1943019b676d900cdf1cb2e10f8f6df
 
 Output written on d:/School - MATFYZ\MFFStudium\Year2_Semester2\PrirodouInspirovane\rozbor.xdv (3 pages, 35320 bytes).

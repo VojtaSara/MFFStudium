@@ -1,10 +1,20 @@
 # Fdb version 3
+<<<<<<< HEAD
 ["xdvipdfmx"] 1617873968 "d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.xdv" "d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.pdf" "d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor" 1617873968
   "d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.xdv" 1617873968 35320 e32fa08e1bc871717e069ba1bec83b4a "xelatex"
   (generated)
   "d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.pdf"
 ["xelatex"] 1617873966 "d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.tex" "d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.xdv" "rozbor" 1617873968
   "C:/Users/monib/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1605474760 23608562 440ea199c1304e1c8ccd6edbca4b4d41 ""
+=======
+["pdflatex"] 1617962585 "c:/Users/monib/Vojta/School/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.tex" "c:/Users/monib/Vojta/School/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.pdf" "rozbor" 1617962590
+  "C:/Users/monib/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1608652573 10294399 ecf134646c7d78c499fdfd0f98716cc9 ""
+  "C:/Users/monib/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1614675246 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+  "C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1000.tfm" 993062122 3148 7e594c8240c71e432203f65ab5f95a51 ""
+  "C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/tfm/public/ae/aer10.tfm" 1057861800 6076 dc5394361b1c55a30e76ff07ab99157c ""
+  "C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/tfm/public/ae/aer12.tfm" 1057861800 6084 d3a937b1dfbe4f0e2c719f2d6acacced ""
+  "C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/tfm/public/ae/aer17.tfm" 1057861800 6104 412e349a5a6e3f1445fb2b73d9eaf6b9 ""
+>>>>>>> 93b4dcf8a1943019b676d900cdf1cb2e10f8f6df
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233955448 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233955454 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -51,6 +61,7 @@
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphicx.sty" 1601745126 8167 20fdfdd783821971c55bc8ee918cbe63 ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty" 1601745126 2677 e3b24ff953e5b58d924f163d25380312 ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty" 1601745126 4093 d7fa7d81d2870d509d25b17d0245e735 ""
+<<<<<<< HEAD
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-xetex.def" 1600956116 26739 3bbeab44d8134abb4fe07bd6b2bf505a ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/l3kernel/expl3.sty" 1603807734 6209 16344733d3ce8b5205716e733dd69420 ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/l3packages/xparse/xparse-generic.tex" 1603807898 80141 edbf9289c99ff37db17116af7a3a423f ""
@@ -66,6 +77,24 @@
   "d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.tex" 1617873964 4140 83b44782f8e1b6be26053ef73035d261 ""
   "rozbor.aux" 1617873968 32 ab05033ccbb38b00a31b200ccedf8001 "xelatex"
   "rozbor.tex" 1617873964 4140 83b44782f8e1b6be26053ef73035d261 ""
+=======
+  "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1600956116 23704 02c466ff883953a445c97e55638005fc ""
+  "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgf.sty" 1601581771 1090 bae35ef70b3168089ef166db3e66f5b2 ""
+  "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgfcore.sty" 1601581771 410 615550c46f918fcbee37641b02a862d9 ""
+  "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty" 1601581771 21013 f4ff83d25bb56552493b030f27c075ae ""
+  "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty" 1601581771 989 c49c8ae06d96f8b15869da7428047b1e ""
+  "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/frontendlayer/tikz.sty" 1601581771 339 c2e180022e3afdb99c7d0ea5ce469b7d ""
+  "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/math/pgfmath.sty" 1601581771 306 c56a323ca5bf9242f54474ced10fca71 ""
+  "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/systemlayer/pgfsys.sty" 1601581771 443 8c872229db56122037e86bcda49e14f3 ""
+  "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgffor.sty" 1601581771 348 ee405e64380c11319f0e249fed57e6c5 ""
+  "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfkeys.sty" 1601581771 274 5ae372b7df79135d240456a1c6f2cf9a ""
+  "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs.sty" 1601581771 325 f9f16d12354225b7dd52a3321f085955 ""
+  "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1463135581 57049 34128738f682d033422ca125f82e5d62 ""
+  "c:/Users/monib/Vojta/School/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.aux" 1617962589 32 3985256e7290058c681f74d7a3565a19 ""
+  "c:/Users/monib/Vojta/School/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.tex" 1617962582 1035 08dfd11afad3345d907aa7fbe7428ed9 ""
+  "rozbor.aux" 1617962589 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "rozbor.tex" 1617962582 1035 08dfd11afad3345d907aa7fbe7428ed9 ""
+>>>>>>> 93b4dcf8a1943019b676d900cdf1cb2e10f8f6df
   (generated)
   "rozbor.aux"
   "rozbor.log"
