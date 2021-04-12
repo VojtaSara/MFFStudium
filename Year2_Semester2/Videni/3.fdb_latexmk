@@ -1,15 +1,19 @@
 # Fdb version 3
-["xdvipdfmx"] 1617873968 "d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.xdv" "d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.pdf" "d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor" 1617873968
-  "d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.xdv" 1617873968 35320 e32fa08e1bc871717e069ba1bec83b4a "xelatex"
+["xdvipdfmx"] 1617890741 "d:/School - MATFYZ/MFFStudium/Year2_Semester2/Videni/3.xdv" "d:/School - MATFYZ/MFFStudium/Year2_Semester2/Videni/3.pdf" "d:/School - MATFYZ/MFFStudium/Year2_Semester2/Videni/3" 1617890742
+  "d:/School - MATFYZ/MFFStudium/Year2_Semester2/Videni/3.xdv" 1617890741 13344 89ed794f7d982570d565f94b3d3dd4ef "xelatex"
   (generated)
-  "d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.pdf"
-["xelatex"] 1617873966 "d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.tex" "d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.xdv" "rozbor" 1617873968
+  "d:/School - MATFYZ/MFFStudium/Year2_Semester2/Videni/3.pdf"
+["xelatex"] 1617890740 "d:/School - MATFYZ/MFFStudium/Year2_Semester2/Videni/3.tex" "d:/School - MATFYZ/MFFStudium/Year2_Semester2/Videni/3.xdv" "3" 1617890742
+  "3.aux" 1617890741 32 3985256e7290058c681f74d7a3565a19 "xelatex"
+  "3.tex" 1617890739 1990 0b9f3a2a5260e93c6da63d35870ff204 ""
   "C:/Users/monib/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1605474760 23608562 440ea199c1304e1c8ccd6edbca4b4d41 ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233955448 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233955454 916 f87d7c45f9c908e672703b83b72241a3 ""
+  "C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1233955454 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1233955454 928 2dc8d444221b7a635bb58038579b861a ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1233955454 908 2921f8a10601f252058503cc6570e581 ""
+  "C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1233955454 940 75ac932a52f80982a9f8ea75d03a34cf ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1233955454 940 228d6584342e91276bf566bcf9716b83 ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -60,15 +64,11 @@
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/realscripts/realscripts.sty" 1455371682 4558 41199fa3acb4eb54622019e50ccfb65d ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/latex/xltxtra/xltxtra.sty" 1546513994 5871 8a29af4ad9d707b5280738995d050842 ""
   "C:/Users/monib/AppData/Local/Programs/MiKTeX/tex/xelatex/xetexconfig/geometry.cfg" 1169255481 322 f4a6234bc28bf70659404393c15d3854 ""
-  "Figure_1.png" 1617873026 31165 2a130674931414001c692d1b49bd8aa7 ""
-  "Figure_2.png" 1617873215 24573 5ba3f5b462c3fbb603971559e87f34dc ""
-  "d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.aux" 1617873968 32 ab05033ccbb38b00a31b200ccedf8001 ""
-  "d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.tex" 1617873964 4140 83b44782f8e1b6be26053ef73035d261 ""
-  "rozbor.aux" 1617873968 32 ab05033ccbb38b00a31b200ccedf8001 "xelatex"
-  "rozbor.tex" 1617873964 4140 83b44782f8e1b6be26053ef73035d261 ""
+  "d:/School - MATFYZ/MFFStudium/Year2_Semester2/Videni/3.aux" 1617890741 32 3985256e7290058c681f74d7a3565a19 ""
+  "d:/School - MATFYZ/MFFStudium/Year2_Semester2/Videni/3.tex" 1617890739 1990 0b9f3a2a5260e93c6da63d35870ff204 ""
   (generated)
-  "rozbor.aux"
-  "rozbor.log"
-  "d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.xdv"
-  "d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.log"
-  "rozbor.xdv"
+  "3.log"
+  "d:/School - MATFYZ/MFFStudium/Year2_Semester2/Videni/3.log"
+  "3.aux"
+  "d:/School - MATFYZ/MFFStudium/Year2_Semester2/Videni/3.xdv"
+  "3.xdv"

@@ -1,7 +1,7 @@
-PWD d:\School - MATFYZ\MFFStudium\Year2_Semester2\PrirodouInspirovane
+PWD d:\School - MATFYZ\MFFStudium\Year2_Semester2\Videni
 INPUT C:\Users\monib\AppData\Local\MiKTeX\miktex\data\le\xetex\xelatex.fmt
-INPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\PrirodouInspirovane\rozbor.tex
-OUTPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\PrirodouInspirovane\rozbor.log
+INPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\Videni\3.tex
+OUTPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\Videni\3.log
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -311,10 +311,10 @@ INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\tex\xelatex\xetexconfig\geome
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\tex\xelatex\xetexconfig\geometry.cfg
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\tex\xelatex\xetexconfig\geometry.cfg
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\tex\xelatex\xetexconfig\geometry.cfg
-INPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\PrirodouInspirovane\rozbor.aux
-INPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\PrirodouInspirovane\rozbor.aux
-INPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\PrirodouInspirovane\rozbor.aux
-OUTPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\PrirodouInspirovane\rozbor.aux
+INPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\Videni\3.aux
+INPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\Videni\3.aux
+INPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\Videni\3.aux
+OUTPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\Videni\3.aux
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmr.fd
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmr.fd
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmr.fd
@@ -345,11 +345,13 @@ INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
-INPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\PrirodouInspirovane\Figure_2.png
-INPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\PrirodouInspirovane\Figure_2.png
-INPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\PrirodouInspirovane\Figure_2.png
-OUTPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\PrirodouInspirovane\rozbor.xdv
-INPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\PrirodouInspirovane\Figure_1.png
-INPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\PrirodouInspirovane\Figure_1.png
-INPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\PrirodouInspirovane\Figure_1.png
-INPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\PrirodouInspirovane\rozbor.aux
+INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\monib\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+OUTPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\Videni\3.xdv
+INPUT d:\School - MATFYZ\MFFStudium\Year2_Semester2\Videni\3.aux

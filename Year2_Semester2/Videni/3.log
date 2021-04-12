@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.11) (preloaded format=xelatex 2020.11.15)  8 APR 2021 11:26
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.11) (preloaded format=xelatex 2020.11.15)  8 APR 2021 16:05
 entering extended mode
-**"d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.tex"
-("d:/School - MATFYZ/MFFStudium/Year2_Semester2/PrirodouInspirovane/rozbor.tex"
+**"d:/School - MATFYZ/MFFStudium/Year2_Semester2/Videni/3.tex"
+("d:/School - MATFYZ/MFFStudium/Year2_Semester2/Videni/3.tex"
 LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-10-27> xparse <2020-03-03> (C:\Users\monib\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -179,8 +179,8 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen160
 \Gm@layoutvoffset=\dimen161
 \Gm@dimlist=\toks24
- (C:\Users\monib\AppData\Local\Programs\MiKTeX\tex/xelatex/xetexconfig\geometry.cfg)) ("d:/School - MATFYZ\MFFStudium\Year2_Semester2\PrirodouInspirovane\rozbor.aux")
-\openout1 = `rozbor.aux'.
+ (C:\Users\monib\AppData\Local\Programs\MiKTeX\tex/xelatex/xetexconfig\geometry.cfg)) ("d:/School - MATFYZ\MFFStudium\Year2_Semester2\Videni\3.aux")
+\openout1 = `3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -300,31 +300,25 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 12.
  (C:\Users\monib\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-File: Figure_2.png Graphic file (type bmp)
-<Figure_2.png>
+Underfull \hbox (badness 10000) in paragraph at lines 16--20
 
-Overfull \hbox (12.57385pt too wide) in paragraph at lines 27--33
-[] \TU/lmr/m/n/10 best
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--20
+
  []
 
 [1
 
-]
-File: Figure_1.png Graphic file (type bmp)
-<Figure_1.png>
-
-Overfull \hbox (12.57385pt too wide) in paragraph at lines 34--65
-[] \TU/lmr/m/n/10 best
- []
-
-[2] [3] ("d:/School - MATFYZ\MFFStudium\Year2_Semester2\PrirodouInspirovane\rozbor.aux") ) 
+] ("d:/School - MATFYZ\MFFStudium\Year2_Semester2\Videni\3.aux") ) 
 Here is how much of TeX's memory you used:
- 5009 strings out of 412197
- 120247 string characters out of 2849632
- 469624 words of memory out of 3000000
- 24472 multiletter control sequences out of 15000+200000
- 542779 words of font info for 55 fonts, out of 3000000 for 9000
+ 5006 strings out of 412197
+ 120087 string characters out of 2849632
+ 454630 words of memory out of 3000000
+ 24471 multiletter control sequences out of 15000+200000
+ 544486 words of font info for 64 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 94i,6n,99p,346b,213s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 94i,6n,99p,328b,213s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on d:/School - MATFYZ\MFFStudium\Year2_Semester2\PrirodouInspirovane\rozbor.xdv (3 pages, 35320 bytes).
+Output written on d:/School - MATFYZ\MFFStudium\Year2_Semester2\Videni\3.xdv (1 page, 13344 bytes).

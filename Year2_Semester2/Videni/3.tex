@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ae} 
+\usepackage{xltxtra}
+\usepackage{graphicx}
+\graphicspath{ {.} }
+\usepackage[margin=1in]{geometry}
+\title{1. DÚ z počítačového vidění - cvičení 3}
+\author{Vojtěch Šára}
+\begin{document}
+\maketitle
+\subsubsection*{1}
+
+Zaprvné chci dokázat, že minimalizací následujícího:
+$$\frac{1}{n}\sum_{i}^{n}d^{2}(x_{i},Q(x_{i}))$$
+splňuji podmínku nejbližšího souseda. To je snadné, neb minimalizací sumy určitě minimalizuji i všechny její členy. Pokud by tedy pro spor nějaký člen
+měl blíže k jiné barvě palety, než která mu byla přidělena funkcí Q (tím by porušoval podmínku nejbl. souseda), pak přiřadit této konkrétní barvě tu bližší 
+barvu palety by zmenšilo velikost sumy, což je ve sporu s předopokladem, že velikost sumy byla minimální.\\\\
+
+\subsubsection*{2}
+Nyní ukážu že minimalizací
+$$\frac{1}{n}\sum_{i}^{n}d^{2}(x_{i},Q(x_{i}))$$
+splňuji i podmínku centroidu. Sumu si mohu rozdělit na sumy jednotlivých regionů:
+$$\frac{1}{|R_{0}|}\sum_{\{i | x_{i} \in R_{0}\}}^{|R_{0}|}d^{2}(x_{i},c_{0}) +
+\frac{1}{|R_{1}|}\sum_{\{i | x_{i} \in R_{1}\}}^{|R_{1}|}d^{2}(x_{i},c_{1}) \dots
+\frac{1}{|R_{k}|}\sum_{\{i | x_{i} \in R_{k}\}}^{|R_{k}|}d^{2}(x_{i},c_{k})
+$$
+Minimalizací celé této sumy minimalizuji i její části, tedy jednotlivé sumy, obecně tedy následující je minimalizováno:
+$$\frac{1}{|R_{k}|}\sum_{\{i | x_{i} \in R_{k}\}}^{|R_{k}|}d^{2}(x_{i},c_{k})$$
+Jelikož vzdálenost každých dvou barev je větší než jedna tak mohu vypustit mocninu (minimalizací mocniny minimalizuji i číslo před umocněním, pokud je $geq 1$):
+$$\frac{1}{|R_{k}|}\sum_{\{i | x_{i} \in R_{k}\}}^{|R_{k}|}d(x_{i},c_{k})$$
+Z toho již lze odvodit, že pokud tento konkrétní člen má být minimální, pak i aritmetický průměr přes $x_{i}$ v každém regionu bude jeho těžištěm.
+
+\end{document}

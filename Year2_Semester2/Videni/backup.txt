@@ -1,0 +1,101 @@
+I = imread('peppers.png');
+nOfColors = 8;
+pallete = median_cut(I,nOfColors);
+indexed_I = rgb2ind(I, pallete, 'nodither');
+figure('NumberTitle', 'off','Name', 'Original');
+imshow(I);
+figure('NumberTitle', 'off','Name', 'Reduced pallete');
+imshow(indexed_I, pallete);
+
+function [reduced_pallette]=median_cut(img, nOfColors)
+    %accepts truecolor images and number K, where K is a power of 2
+    %starting with K = 1
+    
+    [sizeX, sizeY, sizeZ] = size(img);
+    all_colors = reshape(img,[sizeX*sizeY,sizeZ]);
+    % Full pallette contains all unique colors
+    full_pallette = double(unique(all_colors, "rows")) ./ 256;
+        
+    if size(full_pallette,1) < nOfColors
+        reduced_pallette = full_pallette;
+    else
+        % I split the image into the R G B channels
+        R = transpose(reshape(img(:,:,1), 1, []));
+        G = transpose(reshape(img(:,:,2), 1, []));
+        B = transpose(reshape(img(:,:,3), 1, [])); 
+        
+        nOfIterations = log2(nOfColors);
+        array = cell(1,1);
+        array{1,1} = [R, G, B];
+        
+        for i=1:nOfIterations
+            new_array = cell(2^i, 1);
+            for n=1:numel(array)
+                
+                R = array{n,1}(:,1);
+                G = array{n,1}(:,2);
+                B = array{n,1}(:,3);
+                
+                R_range = max(R) - min(R); %ranges in individual channels
+                G_range = max(G) - min(G);
+                B_range = max(B) - min(B);
+                
+                %idx is the first occurence of the median
+                %decide maximum range
+                if (R_range > G_range && R_range > B_range)
+                    [R,G,B] = sort_channels(R, G, B);
+                    idx = min(find(R == median(R)));
+                elseif (G_range > R_range && G_range > B_range)
+                    [G,R,B] = sort_channels(G, R, B);
+                    idx = min(find(G == median(G)));
+                else
+                    [B,G,R] = sort_channels(B, G, R);
+                    idx = min(find(B == median(B)));
+                end
+                
+                median_index = idx; 
+                RGB_line = cat(3, R, G, B);
+                region1 = RGB_line(1:median_index, :, :);
+                region2 = RGB_line(median_index:end, :, :);
+                
+                new_array{2*n-1, 1} = [region1(:,:,1), region1(:,:,2), region1(:,:,3)];
+                new_array{2*n, 1} = [region2(:,:,1), region2(:,:,2), region2(:,:,3)];
+            end       
+            array = new_array;
+        end
+        
+        reduced_pallette = double(calculate_means(array, nOfColors)) ./ 255;
+    end
+    
+    end
+    
+    %sorts channels according the channel with the heighest range
+    function [main_channel_sorted, channel1_sorted, channel2_sorted] = sort_channels(main_channel, channel1, channel2)
+    [main_channel_sorted, indices] = sort(main_channel);
+    channel1_sorted = zeros(length(channel1), 1);
+    channel2_sorted = zeros(length(channel2), 1);
+    
+    for i=1:length(main_channel_sorted)
+        channel1_sorted(i) = channel1(indices(i)); 
+        channel2_sorted(i) = channel2(indices(i)); 
+    end
+    end
+    
+    %returns mean of the colors from the region
+    function [color] = mean_values(region)
+    mean_R = mean(region(:,1));
+    mean_G = mean(region(:,2));
+    mean_B = mean(region(:,3));
+    
+    color = [mean_R, mean_G, mean_B];
+    end
+    
+    %calculates mean of the colors for every region in array
+    function [map] = calculate_means(array, K)
+    map = zeros(K, 3);
+    for i=1:numel(array)
+        map(i,:) = mean_values(array{i,1});
+    end
+end
+
+
